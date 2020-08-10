@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/WidgetTool.dart';
 import 'package:flutter_up/ui/first/first_001_page.dart';
+import 'package:flutter_up/ui/first/first_003_page.dart';
 
 class FirstMainPage extends StatelessWidget {
   @override
@@ -20,7 +21,10 @@ class FirstMainPage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => First001Page()));
           }),
           contentChild('画个知乎玩玩', () {}),
-          contentChild('舒尔特方格', () {}),
+          contentChild('舒尔特方格', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => First003Page()));
+          }),
           contentChild('舒尔特方格2Provider', () {}),
           contentChild('抖音首页', () {}),
           contentChild('底部弹框', () {}),
