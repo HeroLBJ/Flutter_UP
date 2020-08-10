@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_up/tool/ImageTool.dart';
+import 'package:flutter_up/tool/WidgetTool.dart';
+import 'package:flutter_up/ui/third/third_001_page.dart';
 
 class ThirdMainPage extends StatelessWidget {
   @override
@@ -8,11 +9,18 @@ class ThirdMainPage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          '无聊的编码',
+          'Flutter学习',
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Image.network(ImageTool.img01),
+      body: ListView(
+        children: <Widget>[
+          contentChild('Sliver系列', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Third001Page()));
+          }),
+        ],
+      ),
     );
   }
 }

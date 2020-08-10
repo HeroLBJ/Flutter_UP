@@ -1,6 +1,114 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 正义巨像 加里奥
+  static Hero galio() {
+    Skin skin00 = Skin(
+      skinName: '正义巨像 加里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3000.jpg',
+    );
+    Skin skin01 = Skin(
+      skinName: '幽蓝梦魇 加里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3001.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '机械迷城 加里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3002.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '战地之王 加里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3003.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '地狱之门卫士 加里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3004.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '风执事 加里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3005.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '鸡里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3006.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '地狱火 加里奥',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3013.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small3013.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '巨像重击',
+        skillDetail: '每过若干秒，加里奥的下次普攻就能在小范围内造成额外魔法伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Galio_Passive.png');
+    var Q = SkillInfo(
+        skillName: '战争罡风',
+        skillDetail: '加里奥发射两道罡风，罡风在汇聚后会形成一团大型龙卷风，造成持续伤害。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/GalioQ.png');
+    var W = SkillInfo(
+        skillName: '杜朗护盾',
+        skillDetail: '加里奥在防御姿态下蓄力，同时移动速度减慢。在蓄力得以释放时，加里奥将嘲讽并伤害附近的敌人。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/GalioW.png');
+    var E = SkillInfo(
+        skillName: '正义冲拳',
+        skillDetail: '加里奥将暂时后跳然后冲锋，击飞他遇到的第一个敌方英雄。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/GalioE.png');
+    var R = SkillInfo(
+        skillName: '英雄登场',
+        skillDetail:
+            '加里奥将一名友军的当前位置作为他的着陆点，并为区域内的所有友军提供一个魔法护盾。在短暂的延迟后，加里奥会落到该位置上，然后击退附近的敌人。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/GalioR.png');
+
+    var hero = Hero(
+        id: 20200803,
+        firstName: '正义巨像',
+        secondName: '加里奥',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small3000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big3000.jpg',
+        skinList: [
+          skin00,
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07
+        ],
+        labelList: ['坦克', '法师', '中单'],
+        strength: Strength(
+            physicsAttr: 1, magicAttr: 6, defenseAttr: 10, operateAttr: 5),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '光彩熠熠的德玛西亚城外，石巨像加里奥始终如一地守望着。他被创造出来是为了抵挡来犯的法师，但却经常要一动不动地矗立数十年，只有当强大的魔法力量出现时，他才会激活。而只要加里奥活动起来，他便会充分利用每一刻，品味荡气回肠的战斗和来之不易的守护人民的荣耀。可惜，他的胜利永远都喜忧参半，因为消灭魔法的同时，也消灭了他活跃力量的源泉。每一次胜利都会使他再次进入不知世事的休眠。',
+        useList: [
+          '即使在被控制的情况下，你也可以施放【W杜朗护盾】。',
+          '你可以使用小地图上的友军图标来施放【R英雄登场】。 你可以利用【E正义冲拳】的小后跳来躲避敌方的技能。'
+        ],
+        enemyUseList: [
+          '加里奥在积蓄【W杜朗护盾】时移动会变慢。',
+          '在加里奥施放【R英雄登场】时，可以趁加里奥还没跃至空中时打断这个技能。',
+          '加里奥无法用【E正义冲拳】翻越墙体。'
+        ]);
+    return hero;
+  }
+
   /// 狂战士 奥拉夫
   static Hero olaf() {
     Skin skin00 = Skin(

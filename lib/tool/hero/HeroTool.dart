@@ -9,14 +9,29 @@ class HeroTool {
     var heroList = List<Hero>();
     heroList.add(HeroData.annie());
     heroList.add(HeroData.olaf());
+    heroList.add(HeroData.galio());
     return heroList;
   }
 
   /// 获取随机一个英雄
   static Hero randomHero() {
     var heroList = getHeroList();
-    var hero = heroList[Random().nextInt(heroList.length - 1)];
+    var hero = heroList[Random().nextInt(heroList.length)];
     return hero;
+  }
+
+  /// 获取随机一个头像
+  static String randomHeroAvatar() {
+    var hero = randomHero();
+    var skin = hero.skinList[Random().nextInt(hero.skinList.length)];
+    return skin.skinSmallImg;
+  }
+
+  /// 获取随机一个皮肤
+  static String randomHeroSkin() {
+    var hero = randomHero();
+    var skin = hero.skinList[Random().nextInt(hero.skinList.length)];
+    return skin.skinImg;
   }
 
   /// 获取所有英雄头像
