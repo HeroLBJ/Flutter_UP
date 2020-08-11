@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
 class AppBarTool {
-  static getAppBar(BuildContext context, String title, {Function share}) {
+  static getAppBar(BuildContext context, String title,
+      {Function share, Function back}) {
     Color color = Colors.white;
     return AppBar(
       centerTitle: true,
       leading: InkWell(
-        onTap: () {
-          Navigator.pop(context);
-        },
+        onTap: back == null
+            ? () {
+                Navigator.pop(context);
+              }
+            : back,
         child: Icon(Icons.arrow_back_ios, color: color),
       ),
       title: Text(

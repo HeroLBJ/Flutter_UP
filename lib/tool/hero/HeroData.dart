@@ -2,6 +2,78 @@ import 'Hero.dart';
 
 class HeroData {
 
+  static Hero zhaoxin() {
+    Skin skin01 = Skin(
+      skinName: '德邦总管 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5000.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '特战先锋 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5001.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '皇家守卫 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5002.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '绞肉机角斗士 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5003.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '翼骑统领 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5004.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '赵云 子龙',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5005.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '秘密特工 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5006.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '屠龙勇士 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5013.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5013.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '穿星魔锋 赵信',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5020.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5020.jpg',
+    );
+
+    var P = SkillInfo(skillName: '果决', skillDetail: '每第三次攻击造成额外伤害并治疗赵信自身。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/passive/XinZhaoP.png');
+    var Q = SkillInfo(skillName: '三重爪击', skillDetail: '赵信的下3次普攻将造成额外伤害并且第三次攻击将击飞目标。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoQ.png');
+    var W = SkillInfo(skillName: '风斩电刺', skillDetail: '赵信用他的长枪斩击他的前方，之后将长枪向前刺击，并使被击中的敌人减速。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoW.png');
+    var E = SkillInfo(skillName: '无畏冲锋', skillDetail: '赵信对一名敌人发起冲锋，对范围内的所有敌人造成伤害并使他们暂时减速。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoE.png');
+    var R = SkillInfo(skillName: '新月护卫', skillDetail: '赵信对附近的敌人造成基于目标当前生命值的伤害，并击退未被挑战的目标。赵信会创造出一个圆环，且自身不会受到来自圆环之外的敌人所造成的伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoR.png');
+
+    var hero = Hero(
+        id: 20200805,
+        firstName: '德邦总管',
+        secondName: '赵信',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small5000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big5000.jpg',
+        skinList: [skin01, skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09],
+        labelList: ['战士','刺客','打野'],
+        strength: Strength(
+            physicsAttr: 8, magicAttr: 3, defenseAttr: 6, operateAttr: 3),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory: '赵信是效忠于光盾王朝的坚毅勇士。他曾经沦落于诺克萨斯的角斗场，在无数次角斗中得以幸存。被德玛西亚军队解救以后，他便发誓为这群勇敢的解放者贡献生命和忠诚。最称手的三爪长枪相伴，赵信现在为自己的第二祖国而战，一往无前，暴虎冯河。',
+        useList: ['赵信是优秀的团战发起者。冲在阵型的前方来开始战斗，并使用你的终极技能来造成最大的伤害。',
+        '尽量移动到好的位置，好让你终极技能的击退效果的作用提升到最大。'],
+        enemyUseList: ['赵信是个强劲的团战发起者，他的冲锋和终极技能都能够对附近敌方单位造成伤害。 在他使用终极技能时要和队友分散。',
+        '赵信严重依赖他的三重爪击来获得伤害及减少冷却时间的效果，所以阻止他完成他的连招，将会有很显著的效果。']);
+    return hero;
+  }
+
   /// 卡牌大师 崔斯特
   static Hero twist() {
     Skin skin00 = Skin(

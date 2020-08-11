@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_up/ui/first/first003/first_003_provider.dart';
 import 'package:flutter_up/ui/first/first_main_page.dart';
 import 'package:flutter_up/ui/fourth/fourth_main_page.dart';
 import 'package:flutter_up/ui/second/second_main_page.dart';
 import 'package:flutter_up/ui/third/third_main_page.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context) => First003Provider())
+  ], child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

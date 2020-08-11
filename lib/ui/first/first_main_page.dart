@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/WidgetTool.dart';
-import 'package:flutter_up/ui/first/first_001_page.dart';
-import 'package:flutter_up/ui/first/first_003_page.dart';
+import 'package:flutter_up/ui/first/first001/first_001_page.dart';
+import 'package:flutter_up/ui/first/first003/first_003_page.dart';
+import 'package:flutter_up/ui/first/first003/first_003_provider.dart';
+import 'package:provider/provider.dart';
+
+import 'first004/first_004_page.dart';
 
 class FirstMainPage extends StatelessWidget {
   @override
@@ -25,10 +29,13 @@ class FirstMainPage extends StatelessWidget {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => First003Page()));
           }),
+          contentChild('吸顶效果', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => First004Page()));
+          }),
           contentChild('抖音首页', () {}),
           contentChild('底部弹框', () {}),
           contentChild('绘制自定义动画图标', () {}),
-          contentChild('吸顶效果', () {}),
           contentChild('瀑布流界面', () {}),
           contentChild('轮播效果', () {}),
           contentChild('Sliver全家桶', () {}),

@@ -7,10 +7,11 @@ class HeroTool {
   /// 获取所有英雄列表
   static List<Hero> getHeroList() {
     var heroList = List<Hero>();
-    heroList.add(HeroData.annie());
-    heroList.add(HeroData.olaf());
-    heroList.add(HeroData.galio());
-    heroList.add(HeroData.twist());
+    heroList.add(HeroData.annie()); // 001
+    heroList.add(HeroData.olaf()); // 002
+    heroList.add(HeroData.galio()); // 003
+    heroList.add(HeroData.twist()); // 004
+    heroList.add(HeroData.zhaoxin()); // 005
     return heroList;
   }
 
