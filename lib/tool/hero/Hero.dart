@@ -1,10 +1,10 @@
 Hero getHero() {
-  Skin skin00 = Skin(
+  Skin skin01 = Skin(
     skinName: '',
     skinImg: '',
     skinSmallImg: '',
   );
-  Skin skin01 = Skin(
+  Skin skin02 = Skin(
     skinName: '',
     skinImg: '',
     skinSmallImg: '',
@@ -22,7 +22,7 @@ Hero getHero() {
       secondName: '',
       avatar: '',
       bigAvatar: '',
-      skinList: [skin00, skin01],
+      skinList: [skin01, skin02],
       labelList: [''],
       strength: Strength(
           physicsAttr: 0, magicAttr: 0, defenseAttr: 0, operateAttr: 0),

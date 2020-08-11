@@ -25,7 +25,6 @@ class FirstMainPage extends StatelessWidget {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => First003Page()));
           }),
-          contentChild('舒尔特方格2Provider', () {}),
           contentChild('抖音首页', () {}),
           contentChild('底部弹框', () {}),
           contentChild('绘制自定义动画图标', () {}),

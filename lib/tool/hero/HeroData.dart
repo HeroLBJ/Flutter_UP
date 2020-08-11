@@ -1,6 +1,96 @@
 import 'Hero.dart';
 
 class HeroData {
+
+  /// 卡牌大师 崔斯特
+  static Hero twist() {
+    Skin skin00 = Skin(
+      skinName: '卡牌大师 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4000.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4000.jpg',
+    );
+    Skin skin01 = Skin(
+      skinName: '蓝色忧郁 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4001.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4001.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '红桃杰克 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4002.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4002.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '魔幻卡牌 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4003.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4003.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '探戈灵魂 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4004.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4004.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '西部牛仔 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4005.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4005.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '皇家火枪手',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4006.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4006.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '地底世界 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4007.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4007.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '逆转裁判 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4008.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4008.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '逍遥赌侠 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4009.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4009.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '腥红之月 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4010.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4010.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '未来战士 崔斯特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4011.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4011.jpg',
+    );
+
+    var P = SkillInfo(skillName: '灌铅骰子', skillDetail: '在击杀了一名单位后，崔斯特会投掷他的“幸运”骰，并随机获得1到6的额外赏金。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/passive/Cardmaster_SealFate.png');
+    var Q = SkillInfo(skillName: '万能牌', skillDetail: '崔斯特扔出三张卡牌，卡牌会对沿途的每个敌方单位造成伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/WildCards.png');
+    var W = SkillInfo(skillName: '选牌', skillDetail: '崔斯特挑选魔法卡牌，用于下次攻击，并附加额外效果。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/PickACard.png');
+    var E = SkillInfo(skillName: '卡牌骗术', skillDetail: '崔斯特每四次攻击附加一次额外伤害。另外，崔斯特的攻击速度得到被动提升。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/CardmasterStack.png');
+    var R = SkillInfo(skillName: '命运', skillDetail: '崔斯特为他的敌人算卜命运，短时间内显示所有敌方英雄的位置，并可使用传送，让他在引导1.5秒后传送至目标位置。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/Destiny.png');
+
+    var hero = Hero(
+        id: 20200804,
+        firstName: '卡牌大师',
+        secondName: '崔斯特',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small4000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big4000.jpg',
+        skinList: [skin00, skin01,skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09,skin10,skin11],
+        labelList: ['法师','中单'],
+        strength: Strength(
+            physicsAttr: 6, magicAttr: 6, defenseAttr: 2, operateAttr: 9),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory: '崔斯特·菲特是一名声名狼藉的纸牌高手和诈骗惯犯，世界上任何有人烟的地方都有他施展魅力和赌艺的足迹，让那些富人和痴人既羡慕又嫉恨。他很少会认真起来干一件事，总是用一抹轻蔑的微笑和一副漫不经心的随性面对每一天。无论面对什么情况，崔斯特的袖子里永远都会藏着一张王牌。',
+        useList: ['与你的友军合作，争取最佳时机使用命运来伏击敌人。',
+        '潜行角色通常会在生命值较低时逃离战斗。利用命运技能发现潜行目标，并将其消灭。',
+        '卡牌大师可以作为物理系或法系角色，他能够配合不同的队伍构成。'],
+        enemyUseList: ['当你的英雄没有生命值时，早点躲避万能牌的攻击。',
+        '如果你的生命值很低，小心敌方的崔斯特使用命运技能来击杀你。']);
+    return hero;
+  }
+
   /// 正义巨像 加里奥
   static Hero galio() {
     Skin skin00 = Skin(

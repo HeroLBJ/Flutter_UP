@@ -10,6 +10,7 @@ class HeroTool {
     heroList.add(HeroData.annie());
     heroList.add(HeroData.olaf());
     heroList.add(HeroData.galio());
+    heroList.add(HeroData.twist());
     return heroList;
   }
 
