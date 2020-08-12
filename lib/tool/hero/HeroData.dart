@@ -1,6 +1,82 @@
 import 'Hero.dart';
 
 class HeroData {
+
+  static Hero leblanc() {
+    Skin skin01 = Skin(
+      skinName: '诡术妖姬 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7000.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '潮流女王 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7001.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '社会名流 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7002.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '幸福女神 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7003.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '邪鸦魅影 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7004.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '永恒之森',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7005.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '源代码 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7012.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7012.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: 'iG 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7019.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7019.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '魔女 乐芙兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7020.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7020.jpg',
+    );
+
+    var P = SkillInfo(skillName: '镜花水月', skillDetail: '当乐芙兰跌至40%最大生命值以下时，她会隐形1秒并创造一个幻像（不能造成伤害），幻像最多可持续8秒。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeBlancP.png');
+    var Q = SkillInfo(skillName: '恶意魔印', skillDetail: '乐芙兰朝目标投射一个魔印，造成伤害并标记目标3.5秒。用一个技能对被标记的目标造成伤害时，会引爆魔印，造成附加伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancQ.png');
+    var W = SkillInfo(skillName: '魔影迷踪', skillDetail: '乐芙兰位移至目标位置，并对目标位置附近的敌人造成伤害。在接下来的4秒里，她可以激活此技能来回到她的初始位置。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancW.png');
+    var E = SkillInfo(skillName: '幻影锁链', skillDetail: '乐芙兰抛出一条锁链来束缚命中的第一个敌人。如果目标持续被束缚1.5秒，那么目标就会受到额外的魔法伤害并且被禁锢。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancE.png');
+    var R = SkillInfo(skillName: '故技重施', skillDetail: '乐芙兰可以施放她一个技能的故技重施版。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancR.png');
+
+    var hero = Hero(
+        id: 20200807,
+        firstName: '诡术妖姬',
+        secondName: '乐芙兰',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small7000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big7000.jpg',
+        skinList: [skin01, skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09],
+        labelList: ['刺客','法师','中单'],
+        strength: Strength(
+            physicsAttr: 1, magicAttr: 10, defenseAttr: 4, operateAttr: 9),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory: '即使是在秘密团体黑色玫瑰的成员内部，乐芙兰也同样保持神秘，而乐芙兰这个名字也只是众多化名之一。这个皮肤惨白的女人自从诺克萨斯建国初期就开始操纵大小人物，推动事态发展。这位女法师能用魔法制造自己的镜像，她可以出现在任何地点、任何人面前、甚至同时现身于许多地方。乐芙兰永远都在暗处密谋策划，而她真正的动机和她变换不定的身份一样令人难以捉摸。',
+        useList: ['魔影谜踪和故技重施一起释放，可以让对方难以猜出你要回到哪一个魔影谜踪的法阵上。',
+        '使用魔影迷踪可以帮助你有好的站位来施放幻影锁链。',
+        '你可以用恶意魔印与幻影锁链来防止有闪现技能的角色逃跑，最多持续4秒。'],
+        enemyUseList: ['乐芙兰的终极技能可以在她的技能施放期间，或是，少见地在一个遥远的位置创造一个假的乐芙兰。',
+        '在远处创造的假乐芙兰将会跑向距它最近的敌方英雄，施放一个无害的技能，随后立刻消失。',
+        '要先对乐芙兰发起攻击，来规避她的大部分小诡计，尤其是她在近期用过她的位移技能【魔影迷踪】时。',
+        '晕眩或沉默乐芙兰将阻止她激活【魔影迷踪】返回。']);
+    return hero;
+  }
+
   static Hero urgot() {
     Skin skin01 = Skin(
       skinName: '无畏战车 厄加特',

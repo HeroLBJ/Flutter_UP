@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/WidgetTool.dart';
-import 'package:flutter_up/ui/third/third_001_page.dart';
+import 'package:flutter_up/ui/third/third001/third_001_page.dart';
+import 'package:flutter_up/ui/third/third002/third_002_page.dart';
 
 class ThirdMainPage extends StatelessWidget {
   @override
@@ -15,9 +16,13 @@ class ThirdMainPage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          contentChild('Sliver系列', () {
+          contentChild('SliverAppBar基本使用', () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => Third001Page()));
+          }),
+          contentChild('SliverAppBar滑动动画', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Third002Page()));
           }),
         ],
       ),

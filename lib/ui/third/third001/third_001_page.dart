@@ -23,7 +23,7 @@ class _Third001PageState extends State<Third001Page> {
 //              centerTitle: true,
               expandedHeight: 180, // 设置一个伸展空间
               flexibleSpace: FlexibleSpaceBar(
-                title: Text('FlexibleSpaceBar标题',style: TextStyle(color: Colors.white),),
+                title: Text('SliverAppBar基本使用',style: TextStyle(color: Colors.white),),
                 background: Image.network(HeroTool.randomHeroSkin(),fit: BoxFit.cover,),
               ),
               // pinned: true, 设置为true 表示AppBar将不会随着滑动而消失

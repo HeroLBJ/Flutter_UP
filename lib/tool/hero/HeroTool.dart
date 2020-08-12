@@ -13,6 +13,7 @@ class HeroTool {
     heroList.add(HeroData.twist()); // 004
     heroList.add(HeroData.zhaoxin()); // 005
     heroList.add(HeroData.urgot()); // 006
+    heroList.add(HeroData.leblanc());
     return heroList;
   }
 
@@ -24,9 +25,15 @@ class HeroTool {
   }
 
   /// 获取随机一个头像
-  static String randomHeroAvatar() {
-    var hero = randomHero();
-    var skin = hero.skinList[Random().nextInt(hero.skinList.length)];
+  static String randomHeroAvatar({Hero hero}) {
+    var randomHero;
+    if (hero == null) {
+      randomHero = randomHero();
+    } else {
+      randomHero = hero;
+    }
+    var skin =
+        randomHero.skinList[Random().nextInt(randomHero.skinList.length)];
     return skin.skinSmallImg;
   }
 
@@ -35,6 +42,13 @@ class HeroTool {
     var hero = randomHero();
     var skin = hero.skinList[Random().nextInt(hero.skinList.length)];
     return skin.skinImg;
+  }
+
+  /// 获取随机一个皮肤
+  static Skin randomHeroSkinInfo() {
+    var hero = randomHero();
+    var skin = hero.skinList[Random().nextInt(hero.skinList.length)];
+    return skin;
   }
 
   /// 获取所有英雄头像
