@@ -15,6 +15,7 @@ class First004Page extends StatelessWidget {
             var hero = heroList[index];
             return StickyHeader(
               header: Container(
+                margin: EdgeInsets.only(left: 6, right: 6, top: 6),
                 height: 80,
                 color: Colors.teal,
                 child: Row(
@@ -37,6 +38,8 @@ class First004Page extends StatelessWidget {
                 ),
               ),
               content: ListView.builder(
+                  padding:
+                      EdgeInsets.only(left: 6, top: 6, right: 6, bottom: 6),
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   itemCount: hero.skinList.length,
@@ -44,7 +47,15 @@ class First004Page extends StatelessWidget {
                     var skin = hero.skinList[index];
                     return Stack(
                       children: <Widget>[
-                        Image.network(skin.skinImg, fit: BoxFit.cover),
+                        Container(
+                          padding: EdgeInsets.only(bottom: 6),
+                          child: Material(
+                            clipBehavior: Clip.antiAlias,
+                            borderRadius: BorderRadius.circular(6),
+                            child:
+                                Image.network(skin.skinImg, fit: BoxFit.cover),
+                          ),
+                        ),
                         Positioned(
                           left: 15,
                           top: 15,

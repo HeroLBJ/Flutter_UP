@@ -12,6 +12,7 @@ class HeroTool {
     heroList.add(HeroData.galio()); // 003
     heroList.add(HeroData.twist()); // 004
     heroList.add(HeroData.zhaoxin()); // 005
+    heroList.add(HeroData.urgot()); // 006
     return heroList;
   }
 

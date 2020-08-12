@@ -1,59 +1,176 @@
 import 'Hero.dart';
 
 class HeroData {
+  static Hero urgot() {
+    Skin skin01 = Skin(
+      skinName: '无畏战车 厄加特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small6000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '深渊巨蟹 厄加特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small6001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '电锯狂人 厄加特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small6002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '战地机甲 厄加特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small6003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '西部魔影 厄加特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small6009.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '星之守护者COS 厄加特',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6015.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small6015.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '回响烈焰',
+        skillDetail: '厄加特的普攻和【净除】会周期性地触发他腿上的烈焰喷射，造成物理伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/Urgot_Passive.png');
+    var Q = SkillInfo(
+        skillName: '腐蚀电荷',
+        skillDetail: '发射一个可爆炸的电荷至目标位置，对爆炸波及到的敌人造成物理伤害和减速效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/UrgotQ.png');
+    var W = SkillInfo(
+        skillName: '净除',
+        skillDetail: '厄加特减速自身的同时对附近的敌人们火力全开。优先攻击被厄加特近期用其它技能命中过的敌方英雄，并触发回响烈焰。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/UrgotW.png');
+    var E = SkillInfo(
+        skillName: '鄙弃',
+        skillDetail:
+            '厄加特向一个方向冲锋，为自身提供护盾并践踏非英雄的敌人。如果他捕捉到一个敌方英雄，他将会停下并将该英雄抛到他的另一侧。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/UrgotE.png');
+    var R = SkillInfo(
+        skillName: '超越死亡的恐惧',
+        skillDetail:
+            '厄加特发射一个化学钻头，刺穿命中的第一个敌方英雄。如果该英雄的生命值低于一定阈值，那么厄加特就会将该英雄评判为弱者并将其处决。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/UrgotR.png');
+
+    var hero = Hero(
+        id: 20200806,
+        firstName: '无畏战车',
+        secondName: '厄加特',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small6000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big6000.jpg',
+        skinList: [skin01, skin02, skin03, skin04, skin05, skin06],
+        labelList: ['射手', '战士', '上单'],
+        strength: Strength(
+            physicsAttr: 8, magicAttr: 3, defenseAttr: 5, operateAttr: 8),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '厄加特曾一度是诺克萨斯强大的处刑人，但这个让他为之杀人如麻的帝国，最后却背叛了他。铁链束缚着他，并迫使他在一个新的地方懂得了力量的真正意义——祖安地下深处的监牢矿坑——“沉钩”。后来的一场灾难让祖安城中混乱肆虐，厄加特也借机破土而出，在祖安的地下犯罪世界傲视群雄。曾经奴役他的铁链，现在是他折磨猎物的工具，他会用枪火洗礼自己新的家园，肃清那些不配苟活的人，将祖安铸成一座痛苦的熔炉。',
+        useList: [
+          '多注意你每条腿的冷却时间，因为它们是你伤害的重要构成部分。',
+          '命中【腐蚀电荷】或【鄙弃】就能用【净除】来锁定目标——这是一种可让多条腿快速地连续发射的好办法。',
+          '将【超越死亡的恐惧】留给那些看上去就虚弱得快死的敌人。这个技能在灭除那些逃命中的敌人时尤其有效。'
+        ],
+        enemyUseList: [
+          '厄加特严重依赖他的几条腿来打击对手，而这些腿都有独立的冷却时间并且只会在他攻击腿所面对的方向上的敌人时贡献火力。避免吃到多条腿的火力。',
+          '厄加特可以用【净除】来造成并吸收海量的伤害，但在它开火时，厄加特自身会被减速。',
+          '如果你被【超越死亡的恐惧】所击中，要尽力避免限时内让血量降到斩杀线（你25%的最大生命值）。'
+        ]);
+    return hero;
+  }
 
   static Hero zhaoxin() {
     Skin skin01 = Skin(
       skinName: '德邦总管 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5000.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5000.jpg',
     );
     Skin skin02 = Skin(
       skinName: '特战先锋 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5001.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5001.jpg',
     );
     Skin skin03 = Skin(
       skinName: '皇家守卫 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5002.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5002.jpg',
     );
     Skin skin04 = Skin(
       skinName: '绞肉机角斗士 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5003.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5003.jpg',
     );
     Skin skin05 = Skin(
       skinName: '翼骑统领 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5004.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5004.jpg',
     );
     Skin skin06 = Skin(
       skinName: '赵云 子龙',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5005.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5005.jpg',
     );
     Skin skin07 = Skin(
       skinName: '秘密特工 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5006.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5006.jpg',
     );
     Skin skin08 = Skin(
       skinName: '屠龙勇士 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5013.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5013.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5013.jpg',
     );
     Skin skin09 = Skin(
       skinName: '穿星魔锋 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5020.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small5020.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small5020.jpg',
     );
 
-    var P = SkillInfo(skillName: '果决', skillDetail: '每第三次攻击造成额外伤害并治疗赵信自身。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/passive/XinZhaoP.png');
-    var Q = SkillInfo(skillName: '三重爪击', skillDetail: '赵信的下3次普攻将造成额外伤害并且第三次攻击将击飞目标。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoQ.png');
-    var W = SkillInfo(skillName: '风斩电刺', skillDetail: '赵信用他的长枪斩击他的前方，之后将长枪向前刺击，并使被击中的敌人减速。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoW.png');
-    var E = SkillInfo(skillName: '无畏冲锋', skillDetail: '赵信对一名敌人发起冲锋，对范围内的所有敌人造成伤害并使他们暂时减速。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoE.png');
-    var R = SkillInfo(skillName: '新月护卫', skillDetail: '赵信对附近的敌人造成基于目标当前生命值的伤害，并击退未被挑战的目标。赵信会创造出一个圆环，且自身不会受到来自圆环之外的敌人所造成的伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoR.png');
+    var P = SkillInfo(
+        skillName: '果决',
+        skillDetail: '每第三次攻击造成额外伤害并治疗赵信自身。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/XinZhaoP.png');
+    var Q = SkillInfo(
+        skillName: '三重爪击',
+        skillDetail: '赵信的下3次普攻将造成额外伤害并且第三次攻击将击飞目标。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoQ.png');
+    var W = SkillInfo(
+        skillName: '风斩电刺',
+        skillDetail: '赵信用他的长枪斩击他的前方，之后将长枪向前刺击，并使被击中的敌人减速。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoW.png');
+    var E = SkillInfo(
+        skillName: '无畏冲锋',
+        skillDetail: '赵信对一名敌人发起冲锋，对范围内的所有敌人造成伤害并使他们暂时减速。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoE.png');
+    var R = SkillInfo(
+        skillName: '新月护卫',
+        skillDetail:
+            '赵信对附近的敌人造成基于目标当前生命值的伤害，并击退未被挑战的目标。赵信会创造出一个圆环，且自身不会受到来自圆环之外的敌人所造成的伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/XinZhaoR.png');
 
     var hero = Hero(
         id: 20200805,
@@ -61,16 +178,31 @@ class HeroData {
         secondName: '赵信',
         avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small5000.jpg',
         bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big5000.jpg',
-        skinList: [skin01, skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09],
-        labelList: ['战士','刺客','打野'],
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09
+        ],
+        labelList: ['战士', '刺客', '打野'],
         strength: Strength(
             physicsAttr: 8, magicAttr: 3, defenseAttr: 6, operateAttr: 3),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
-        backStory: '赵信是效忠于光盾王朝的坚毅勇士。他曾经沦落于诺克萨斯的角斗场，在无数次角斗中得以幸存。被德玛西亚军队解救以后，他便发誓为这群勇敢的解放者贡献生命和忠诚。最称手的三爪长枪相伴，赵信现在为自己的第二祖国而战，一往无前，暴虎冯河。',
-        useList: ['赵信是优秀的团战发起者。冲在阵型的前方来开始战斗，并使用你的终极技能来造成最大的伤害。',
-        '尽量移动到好的位置，好让你终极技能的击退效果的作用提升到最大。'],
-        enemyUseList: ['赵信是个强劲的团战发起者，他的冲锋和终极技能都能够对附近敌方单位造成伤害。 在他使用终极技能时要和队友分散。',
-        '赵信严重依赖他的三重爪击来获得伤害及减少冷却时间的效果，所以阻止他完成他的连招，将会有很显著的效果。']);
+        backStory:
+            '赵信是效忠于光盾王朝的坚毅勇士。他曾经沦落于诺克萨斯的角斗场，在无数次角斗中得以幸存。被德玛西亚军队解救以后，他便发誓为这群勇敢的解放者贡献生命和忠诚。最称手的三爪长枪相伴，赵信现在为自己的第二祖国而战，一往无前，暴虎冯河。',
+        useList: [
+          '赵信是优秀的团战发起者。冲在阵型的前方来开始战斗，并使用你的终极技能来造成最大的伤害。',
+          '尽量移动到好的位置，好让你终极技能的击退效果的作用提升到最大。'
+        ],
+        enemyUseList: [
+          '赵信是个强劲的团战发起者，他的冲锋和终极技能都能够对附近敌方单位造成伤害。 在他使用终极技能时要和队友分散。',
+          '赵信严重依赖他的三重爪击来获得伤害及减少冷却时间的效果，所以阻止他完成他的连招，将会有很显著的效果。'
+        ]);
     return hero;
   }
 
@@ -79,69 +211,100 @@ class HeroData {
     Skin skin00 = Skin(
       skinName: '卡牌大师 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4000.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4000.jpg',
     );
     Skin skin01 = Skin(
       skinName: '蓝色忧郁 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4001.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4001.jpg',
     );
     Skin skin02 = Skin(
       skinName: '红桃杰克 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4002.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4002.jpg',
     );
     Skin skin03 = Skin(
       skinName: '魔幻卡牌 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4003.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4003.jpg',
     );
     Skin skin04 = Skin(
       skinName: '探戈灵魂 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4004.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4004.jpg',
     );
     Skin skin05 = Skin(
       skinName: '西部牛仔 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4005.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4005.jpg',
     );
     Skin skin06 = Skin(
       skinName: '皇家火枪手',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4006.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4006.jpg',
     );
     Skin skin07 = Skin(
       skinName: '地底世界 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4007.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4007.jpg',
     );
     Skin skin08 = Skin(
       skinName: '逆转裁判 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4008.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4008.jpg',
     );
     Skin skin09 = Skin(
       skinName: '逍遥赌侠 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4009.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4009.jpg',
     );
     Skin skin10 = Skin(
       skinName: '腥红之月 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4010.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4010.jpg',
     );
     Skin skin11 = Skin(
       skinName: '未来战士 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4011.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small4011.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small4011.jpg',
     );
 
-    var P = SkillInfo(skillName: '灌铅骰子', skillDetail: '在击杀了一名单位后，崔斯特会投掷他的“幸运”骰，并随机获得1到6的额外赏金。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/passive/Cardmaster_SealFate.png');
-    var Q = SkillInfo(skillName: '万能牌', skillDetail: '崔斯特扔出三张卡牌，卡牌会对沿途的每个敌方单位造成伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/WildCards.png');
-    var W = SkillInfo(skillName: '选牌', skillDetail: '崔斯特挑选魔法卡牌，用于下次攻击，并附加额外效果。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/PickACard.png');
-    var E = SkillInfo(skillName: '卡牌骗术', skillDetail: '崔斯特每四次攻击附加一次额外伤害。另外，崔斯特的攻击速度得到被动提升。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/CardmasterStack.png');
-    var R = SkillInfo(skillName: '命运', skillDetail: '崔斯特为他的敌人算卜命运，短时间内显示所有敌方英雄的位置，并可使用传送，让他在引导1.5秒后传送至目标位置。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/Destiny.png');
+    var P = SkillInfo(
+        skillName: '灌铅骰子',
+        skillDetail: '在击杀了一名单位后，崔斯特会投掷他的“幸运”骰，并随机获得1到6的额外赏金。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Cardmaster_SealFate.png');
+    var Q = SkillInfo(
+        skillName: '万能牌',
+        skillDetail: '崔斯特扔出三张卡牌，卡牌会对沿途的每个敌方单位造成伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/WildCards.png');
+    var W = SkillInfo(
+        skillName: '选牌',
+        skillDetail: '崔斯特挑选魔法卡牌，用于下次攻击，并附加额外效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/PickACard.png');
+    var E = SkillInfo(
+        skillName: '卡牌骗术',
+        skillDetail: '崔斯特每四次攻击附加一次额外伤害。另外，崔斯特的攻击速度得到被动提升。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/CardmasterStack.png');
+    var R = SkillInfo(
+        skillName: '命运',
+        skillDetail: '崔斯特为他的敌人算卜命运，短时间内显示所有敌方英雄的位置，并可使用传送，让他在引导1.5秒后传送至目标位置。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/Destiny.png');
 
     var hero = Hero(
         id: 20200804,
@@ -149,17 +312,35 @@ class HeroData {
         secondName: '崔斯特',
         avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small4000.jpg',
         bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big4000.jpg',
-        skinList: [skin00, skin01,skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09,skin10,skin11],
-        labelList: ['法师','中单'],
+        skinList: [
+          skin00,
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11
+        ],
+        labelList: ['法师', '中单'],
         strength: Strength(
             physicsAttr: 6, magicAttr: 6, defenseAttr: 2, operateAttr: 9),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
-        backStory: '崔斯特·菲特是一名声名狼藉的纸牌高手和诈骗惯犯，世界上任何有人烟的地方都有他施展魅力和赌艺的足迹，让那些富人和痴人既羡慕又嫉恨。他很少会认真起来干一件事，总是用一抹轻蔑的微笑和一副漫不经心的随性面对每一天。无论面对什么情况，崔斯特的袖子里永远都会藏着一张王牌。',
-        useList: ['与你的友军合作，争取最佳时机使用命运来伏击敌人。',
-        '潜行角色通常会在生命值较低时逃离战斗。利用命运技能发现潜行目标，并将其消灭。',
-        '卡牌大师可以作为物理系或法系角色，他能够配合不同的队伍构成。'],
-        enemyUseList: ['当你的英雄没有生命值时，早点躲避万能牌的攻击。',
-        '如果你的生命值很低，小心敌方的崔斯特使用命运技能来击杀你。']);
+        backStory:
+            '崔斯特·菲特是一名声名狼藉的纸牌高手和诈骗惯犯，世界上任何有人烟的地方都有他施展魅力和赌艺的足迹，让那些富人和痴人既羡慕又嫉恨。他很少会认真起来干一件事，总是用一抹轻蔑的微笑和一副漫不经心的随性面对每一天。无论面对什么情况，崔斯特的袖子里永远都会藏着一张王牌。',
+        useList: [
+          '与你的友军合作，争取最佳时机使用命运来伏击敌人。',
+          '潜行角色通常会在生命值较低时逃离战斗。利用命运技能发现潜行目标，并将其消灭。',
+          '卡牌大师可以作为物理系或法系角色，他能够配合不同的队伍构成。'
+        ],
+        enemyUseList: [
+          '当你的英雄没有生命值时，早点躲避万能牌的攻击。',
+          '如果你的生命值很低，小心敌方的崔斯特使用命运技能来击杀你。'
+        ]);
     return hero;
   }
 

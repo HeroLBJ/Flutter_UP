@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_up/ui/first/first003/first_003_provider.dart';
+import 'package:flutter_up/tool/provider/ProviderTool.dart';
 import 'package:flutter_up/ui/first/first_main_page.dart';
 import 'package:flutter_up/ui/fourth/fourth_main_page.dart';
 import 'package:flutter_up/ui/second/second_main_page.dart';
@@ -7,9 +7,7 @@ import 'package:flutter_up/ui/third/third_main_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MultiProvider(providers: [
-    ChangeNotifierProvider(create: (context) => First003Provider())
-  ], child: MyApp()));
+  runApp(MultiProvider(providers: providers, child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
