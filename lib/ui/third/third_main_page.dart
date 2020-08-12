@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/WidgetTool.dart';
 import 'package:flutter_up/ui/third/third001/third_001_page.dart';
 import 'package:flutter_up/ui/third/third002/third_002_page.dart';
+import 'package:flutter_up/ui/third/third003/third_003_page.dart';
 
 class ThirdMainPage extends StatelessWidget {
   @override
@@ -23,6 +24,10 @@ class ThirdMainPage extends StatelessWidget {
           contentChild('SliverAppBar滑动动画', () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => Third002Page()));
+          }),
+          contentChild('AfterLayout插件', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Third003Page()));
           }),
         ],
       ),

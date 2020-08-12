@@ -16,9 +16,24 @@
 * Listener( // 监听滑动
 *   onPointerMove:(result){}
 * )
+*
+* 如何在页面还没有显示时，提前预知界面高度
+*
+* 界面高度定制化、动态且无法预知界面高度
+*
+* PreferredSize
+*
+* after_layout
+*   - with AfterLayoutMixin
+*
+*   void afterFirstLayout(BuildContext context){
+*     // 获取一个组件的高度
+*     RenderBox box = context.findRenderObject();
+*     double height = box.getMaxIntrinsicHeight(MediaQuery.of(context).size.width);
+*     Size size = box.size; // 获取一个当前已被run的部件高度
+*     widget.updateHeight(height);
+*   }
 * */
-
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/hero/HeroTool.dart';
