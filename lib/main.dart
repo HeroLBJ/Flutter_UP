@@ -1,5 +1,6 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_up/tool/ColorTool.dart';
 import 'package:flutter_up/tool/provider/ProviderTool.dart';
 import 'package:flutter_up/tool/provider/ThemeProvider.dart';
 import 'package:flutter_up/tool/toast/ToastTool.dart';
@@ -16,6 +17,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    ColorTool.init(context);
     return MaterialApp(
       title: 'FLUTTER',
       debugShowCheckedModeBanner: false,

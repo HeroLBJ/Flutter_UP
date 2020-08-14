@@ -24,6 +24,10 @@ class ThemeProvider extends ChangeNotifier {
     return _currentThemeData;
   }
 
+  ThemeType getThemeType() {
+    return _currentThemeType;
+  }
+
   _darkTheme() {
     return ThemeData(
         brightness: Brightness.dark,

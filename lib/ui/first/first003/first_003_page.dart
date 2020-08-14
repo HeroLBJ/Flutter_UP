@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/AppBarTool.dart';
+import 'package:flutter_up/tool/ColorTool.dart';
+import 'package:flutter_up/tool/toast/ToastTool.dart';
 import 'package:flutter_up/ui/first/first003/first_003_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -37,7 +39,7 @@ class _First003PageState extends State<First003Page>
     }
     if (provider.currentNum > provider.maxNum) {
       // 成功，难度升级
-      print('挑战成功，难度升级');
+      ToastTool.showText('挑战成功，难度升级');
       provider.switchDiff();
     }
   }
@@ -126,8 +128,8 @@ class _First003PageState extends State<First003Page>
             Text(
                 '${Provider.of<First003Provider>(context).gameTime.toStringAsFixed(1)}s',
                 style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold)),
+                    color: ColorTool.black3_9,
+                    fontSize: 32, fontWeight: FontWeight.bold)),
             SizedBox(height: 15),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
