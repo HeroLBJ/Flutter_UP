@@ -3,13 +3,39 @@
 *   physics: 默认效果 BouncingScrollPhysics() ListView 没有数据时下拉效果
 *             ClampingScrollPhysics() // ListView 没有数据时下拉无效果
 *   SliverAppBar(
-*     pinned:
-*     floating:
+*     pinned: 保留APPBar 不会因为滑动而
+*     floating: 下拉时，立即展示APPBar
 *     expandedHeight: 扩展高度
+*     snap:
 *     flexibleSpace:FlexibleSpaceBar(
 *       background:
+*       collapseMode:CollapseMode.parallax
 *     )
 *   )
+*
+* SliverList:ListView
+* SliverGrid ： GridView
+* SliverPadding: padding
+* SliverAppBar：一个更高级的APPBar
+* SliverPersistentHeader:SliverAppBar就是对该类的扩展，如果SliverAppBar还不能满足，则需要扩展该类实现更多功能
+* SliverToBoxAdapter:接收一个普通的Widget,用于包裹普通的Widget，这样就可以在Sliver中使用普通的Widget了
+* SliverFillViewport:可实现子View占屏幕的百分比
+* SliverFillRemaining:填充其余空白页面
+* Align
+*
+*
+* CustomScrollView
+*
+* // 最大滑动距离
+*  scrollController.position.maxScrollExtent
+* // 当前滑动距离
+*  scrollController.position.pixels
+*
+* NestedScrollView
+*  headerSliverBuilder[ sliver 头部]
+*  body 普通的Widget
+*
+* SliverList
 *
 *   Divider() // 横线
 *

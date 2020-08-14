@@ -1,59 +1,595 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 无极剑圣 易
+  static Hero masteryi() {
+    Skin skin01 = Skin(
+      skinName: '无极剑圣 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '暗影 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '星战 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '天人合一 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '侍魂 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '铁血剑豪 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '源计划：林 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11009.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '斩星魔剑 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11010.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '玉剑传说 无极',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11011.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11011.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '持胡萝卜的雪人 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11017.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11017.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '腥红之月 易',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11024.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small11024.jpg',
+    );
 
+    var P = SkillInfo(
+        skillName: '双重打击',
+        skillDetail: '易大师每攻击数次，就会同时对目标进行2次打击。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/MasterYi_Passive1.png');
+    var Q = SkillInfo(
+        skillName: '阿尔法突袭',
+        skillDetail:
+            '易以肉眼难以发觉的速度穿梭于战场，对多个敌人造成物理伤害，同时处于不可被选取的状态下。阿尔法突袭可以暴击，并对野怪造成额外物理伤害。普通攻击可以减少阿尔法突袭的冷却时间。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/AlphaStrike.png');
+    var W = SkillInfo(
+        skillName: '冥想',
+        skillDetail:
+            '易通过集中念力来活化他的身体，从而回复生命值，并暂时减少所受的伤害。此外，易还会为双重打击充能，并暂停无极剑道和高原血统的持续时长。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/Meditate.png');
+    var E = SkillInfo(
+        skillName: '无极剑道',
+        skillDetail: '提供额外真实伤害至普攻',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/WujuStyle.png');
+    var R = SkillInfo(
+        skillName: '高原血统',
+        skillDetail:
+            '易以超乎想象的身法进行移动，短时间内提升移动速度和攻击速度，并免疫减速效果。该技能激活期间，易在击杀掉一名敌方英雄的同时，会延长该技能的持续时间。在击杀和助攻后，也会被动地减少易其它技能的冷却时间。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/Highlander.png');
+
+    var hero = Hero(
+        id: 20200811,
+        firstName: '无极剑圣',
+        secondName: '易',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small11000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big11000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11
+        ],
+        labelList: ['刺客', '战士', '打野'],
+        strength: Strength(
+            physicsAttr: 10, magicAttr: 2, defenseAttr: 4, operateAttr: 2),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '易师锤炼身体、磨砺心智，直至身心合一。尽管他将暴力作为不得已的选择，但他优雅迅猛的剑法总是让这一手段显得尤为快捷。作为无极之道最后的门徒，易大师致力于这个门派的传承，用七度洞悉目镜搜寻着最有资格的人，寻找潜在的新弟子。',
+        useList: [
+          '如果你在与远程玩家作战的兵线，升级冥想可以让你在线上呆得更久，比对手升级更快。',
+          '早期，无极剑道在给小兵们最后一击的时候很强。',
+          '试着在一名敌方英雄前使用阿尔法突袭来攻击小兵，这样在技能结束的时候，你就处于一个安全距离的位置了。'
+        ],
+        enemyUseList: [
+          '冥想能够有效地治疗持续伤害，但易大师在游戏前期很容易被配合gank。',
+          '如果易大师试图用无极剑道补兵，则连续几次攻击他，令其不得不消耗法力使用冥想回复生命值。',
+          '虽然易大师在使用高原血统时不能被减速，但其它限制技能还能够阻止他。'
+        ]);
+    return hero;
+  }
+
+  /// 正义天使 凯尔
+  static Hero kayle() {
+    Skin skin01 = Skin(
+      skinName: '正义天使 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small0000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '银白审判 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '末世天使 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '大天使长米迦勒 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '战场女武神 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '圣光审判 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '钢铁之翼 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '防爆天使 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '钢铁审判官 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '五杀摇滚女声主唱 凯尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10009.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '登神长阶',
+        skillDetail:
+            '凯尔的攻击会随着她提升等级和分配技能点而获得增强。她的羽翼将燃起圣焰，逐步提供攻击速度，移动速度，攻击距离，以及攻击附带焰浪。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Kayle_P.png');
+    var Q = SkillInfo(
+        skillName: '耀焰冲击',
+        skillDetail: '凯尔召出一个传送门，召唤出一把星界之剑来刺穿敌人，对命中的所有敌人造成减速、伤害和防御属性击碎效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/KayleQ.png');
+    var W = SkillInfo(
+        skillName: '星界恩典',
+        skillDetail: '通过神圣的赐福，凯尔为自己和距她最近的友方英雄提供治疗和移动速度。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/KayleW.png');
+    var E = SkillInfo(
+        skillName: '星火符刃',
+        skillDetail:
+            '被动：凯尔的星界之剑，“美德”，会对她在攻击的敌人造成额外伤害。\n主动：凯尔的下次攻击将用星火重击她的目标，基于敌人的已损失生命值造成额外伤害。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/KayleE.png');
+    var R = SkillInfo(
+        skillName: '圣裁之刻',
+        skillDetail: '凯尔让一名友方英雄免疫伤害，并号召曾经的正义星灵们用一阵神圣剑雨来纯化她目标附近的区域。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/KayleR.png');
+
+    var hero = Hero(
+        id: 20200810,
+        firstName: '正义天使',
+        secondName: '凯尔',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small10000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big10000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10
+        ],
+        labelList: ['战士', '辅助', '中单'],
+        strength: Strength(
+            physicsAttr: 6, magicAttr: 7, defenseAttr: 6, operateAttr: 7),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '在符文战争最激烈的时刻，一位巨神星灵诞下了凯尔，她传承了母亲的荣耀，在圣火飞翼的承载下为了正义而战。她和孪生妹妹莫甘娜曾是德玛西亚的保护神——但凡人反反复复的失败最终让凯尔的幻想破灭，彻底抛弃了这个国度。但关于她用火焰长剑惩罚不义之徒的传说依然在流传，关于她终将回归的希望也依然在持续……',
+        useList: [
+          '对高伤害输出的友军使用【R圣裁之刻】可以让其进行更加自由的输出，从而扭转战局。',
+          '凯尔一旦从【登神长阶】中获得远程形态，就会变得极为强悍。在此之前请稳重发育。',
+          '凯尔会从攻击力和法术强度中获益良多，因此，诸如纳什之牙或海克斯科技枪刃这类的混伤装备特别适合她。'
+        ],
+        enemyUseList: [
+          '圣裁之刻】只能让凯尔或她的友军免疫伤害。减速和晕眩技能仍可用。因此，如果他们太过激进，就诱捕他们。',
+          '凯尔很脆弱，一旦她施放终极技能，则转而攻击她。',
+          '凯尔在开始游戏时是一名较弱的近战英雄。尽量在她飞升成远程形态之前将她打崩。'
+        ]);
+    return hero;
+  }
+
+  /// 远古恐惧 费德提克
+  static Hero fiddlesticks() {
+    Skin skin01 = Skin(
+      skinName: '远古恐惧 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '幽魂 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '联合王国 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '荒野幽灵 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '南瓜头 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '铁钩船长 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '惊悚派对 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '糖果使徒 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '重生之沙 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '禁卫机甲 费德提克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small9009.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '巫骇草人',
+        skillDetail: '费德提克的饰品会被替换为【草间人】。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/FiddleSticks_Passive.png');
+    var Q = SkillInfo(
+        skillName: '恐惧',
+        skillDetail:
+            '费德提克在非战斗状态且未被敌人看见时，如果用技能对敌人造成了伤害，或者对一名敌人使用了【Q恐惧】的主动效果，都会使目标因害怕而逃跑一段时间。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/FiddleSticksQ.png');
+    var W = SkillInfo(
+        skillName: '五骨丰登',
+        skillDetail: '费德提克从附近敌人们身上吸取生命值，在持续结束时造成额外的处决伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/FiddleSticksW.png');
+    var E = SkillInfo(
+        skillName: '夜割',
+        skillDetail: '费德提克用它的镰刀斩击一个区域，使命中的所有敌人减速，并使斩击区域中心的敌人沉默。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/FiddleSticksE.png');
+    var R = SkillInfo(
+        skillName: '群鸦风暴',
+        skillDetail: '一群杀人鸦盘旋于费德提克身边，每秒对范围内的所有敌方单位造成伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/FiddleSticksR.png');
+
+    var hero = Hero(
+        id: 20200809,
+        firstName: '远古恐惧',
+        secondName: '费德提克',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small9000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big9000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10
+        ],
+        labelList: ['法师', '辅助', '打野'],
+        strength: Strength(
+            physicsAttr: 2, magicAttr: 9, defenseAttr: 3, operateAttr: 9),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '某物已在符文之地苏醒，远古且可怖。它潜伏于人类世界的边缘，被浓烈的妄想所吸引，以受害者的惊骇为食，人们将这永恒的恐怖之物称为费德提克。这个狂乱的拼凑之物挥舞着镰刀收割恐惧，摧毁不幸与之相逢的人的神志。当心乌鸦的声响，或是那近乎人形的怪物所发出的呓语吧……费德提克已经归来。',
+        useList: ['无'],
+        enemyUseList: ['无']);
+    return hero;
+  }
+
+  /// 猩红收割者 费拉基米尔
+  static Hero vladimir() {
+    Skin skin01 = Skin(
+      skinName: '猩红收割者 费拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '费拉基米尔伯爵',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '费拉基米尔侯爵',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '诺斯费拉图 弗拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '霹雳游侠 费拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '鲜血领主 费拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '摄魂男爵 费拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '学生会长 费拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '黑潮 费拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '黑夜使者 费拉基米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8014.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small8014.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '血色契约',
+        skillDetail: '每40生命值加成给予弗拉基米尔1法术强度，每1法术强度给予弗拉基米尔1.4生命值（不会自我循环叠加）。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/VladimirP.png');
+    var Q = SkillInfo(
+        skillName: '鲜血转换',
+        skillDetail: '弗拉基米尔从目标敌人身上偷取生命值。当弗拉基米尔的资源槽攒满后，鲜血转换将暂时获得增益，提升伤害和治疗效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/VladimirQ.png');
+    var W = SkillInfo(
+        skillName: '血红之池',
+        skillDetail: '弗拉基米尔潜入血泊之中，变得不可被选取，持续2秒。血泊上的敌人被减速，同时弗拉基米尔会从他们身上吸取生命。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/VladimirSanguinePool.png');
+    var E = SkillInfo(
+        skillName: '血之潮汐',
+        skillDetail: '弗拉基米尔消耗他的生命值来持续灌注一个蓄血库，蓄血库在释放时会对他身边的敌人造成伤害，但会被敌方单位所阻挡。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/VladimirE.png');
+    var R = SkillInfo(
+        skillName: '血之瘟疫',
+        skillDetail:
+            '弗拉基米尔令一片区域感染上剧毒瘟疫，增加受感染敌人所受的伤害。在几秒后，血之瘟疫会对被感染的敌人造成魔法伤害，并根据命中的敌方英雄数来治疗弗拉基米尔。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/VladimirHemoplague.png');
+
+    var hero = Hero(
+        id: 20200808,
+        firstName: '猩红收割者',
+        secondName: '费拉基米尔',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small8000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big8000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10
+        ],
+        labelList: ['法师', '坦克', '上单'],
+        strength: Strength(
+            physicsAttr: 2, magicAttr: 8, defenseAttr: 6, operateAttr: 2),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '弗拉基米尔是一个渴望凡人鲜血的魔鬼，早在诺克萨斯帝国建立之初就开始干涉帝国的内政。他的血巫术不仅能超越自然规律延长他的寿命，而且还能让他随心所欲地控制其他人的身体和思想。在诺克萨斯贵族奢华的沙龙聚会上，这个能力让他围绕自己建立了狂热的教众，而在底层的后巷里，这个能力则让他吸干敌人的鲜血。',
+        useList: [
+          '鲜血转换会在治疗弗拉基米尔之前立即对敌人造成伤害，令它成为游戏中最好的最后一击方法之一。',
+          '在能攻击到最多单位的地方施放血之瘟疫。',
+          '血红之池能躲避飞来的法术，它可以用来避开控制技能。'
+        ],
+        enemyUseList: [
+          '尽量在【R血之瘟疫】引爆前干掉弗拉基米尔，否则每个被感染的英雄都会为弗拉基米尔提供治疗效果。',
+          '在团战开始时逼迫弗拉基米尔交出【W血红之池】，就会最大限度地消耗他的生命值。',
+          '破败王者之刃】和【兰德里的折磨】等克制高生命值的装备能有效地对抗弗拉基米尔。'
+        ]);
+    return hero;
+  }
+
+  /// 诡术妖姬 乐芙兰
   static Hero leblanc() {
     Skin skin01 = Skin(
       skinName: '诡术妖姬 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7000.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7000.jpg',
     );
     Skin skin02 = Skin(
       skinName: '潮流女王 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7001.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7001.jpg',
     );
     Skin skin03 = Skin(
       skinName: '社会名流 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7002.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7002.jpg',
     );
     Skin skin04 = Skin(
       skinName: '幸福女神 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7003.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7003.jpg',
     );
     Skin skin05 = Skin(
       skinName: '邪鸦魅影 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7004.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7004.jpg',
     );
     Skin skin06 = Skin(
       skinName: '永恒之森',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7005.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7005.jpg',
     );
     Skin skin07 = Skin(
       skinName: '源代码 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7012.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7012.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7012.jpg',
     );
     Skin skin08 = Skin(
       skinName: 'iG 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7019.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7019.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7019.jpg',
     );
     Skin skin09 = Skin(
       skinName: '魔女 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7020.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small7020.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small7020.jpg',
     );
 
-    var P = SkillInfo(skillName: '镜花水月', skillDetail: '当乐芙兰跌至40%最大生命值以下时，她会隐形1秒并创造一个幻像（不能造成伤害），幻像最多可持续8秒。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeBlancP.png');
-    var Q = SkillInfo(skillName: '恶意魔印', skillDetail: '乐芙兰朝目标投射一个魔印，造成伤害并标记目标3.5秒。用一个技能对被标记的目标造成伤害时，会引爆魔印，造成附加伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancQ.png');
-    var W = SkillInfo(skillName: '魔影迷踪', skillDetail: '乐芙兰位移至目标位置，并对目标位置附近的敌人造成伤害。在接下来的4秒里，她可以激活此技能来回到她的初始位置。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancW.png');
-    var E = SkillInfo(skillName: '幻影锁链', skillDetail: '乐芙兰抛出一条锁链来束缚命中的第一个敌人。如果目标持续被束缚1.5秒，那么目标就会受到额外的魔法伤害并且被禁锢。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancE.png');
-    var R = SkillInfo(skillName: '故技重施', skillDetail: '乐芙兰可以施放她一个技能的故技重施版。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/LeblancR.png');
+    var P = SkillInfo(
+        skillName: '镜花水月',
+        skillDetail: '当乐芙兰跌至40%最大生命值以下时，她会隐形1秒并创造一个幻像（不能造成伤害），幻像最多可持续8秒。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/LeBlancP.png');
+    var Q = SkillInfo(
+        skillName: '恶意魔印',
+        skillDetail:
+            '乐芙兰朝目标投射一个魔印，造成伤害并标记目标3.5秒。用一个技能对被标记的目标造成伤害时，会引爆魔印，造成附加伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/LeblancQ.png');
+    var W = SkillInfo(
+        skillName: '魔影迷踪',
+        skillDetail: '乐芙兰位移至目标位置，并对目标位置附近的敌人造成伤害。在接下来的4秒里，她可以激活此技能来回到她的初始位置。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/LeblancW.png');
+    var E = SkillInfo(
+        skillName: '幻影锁链',
+        skillDetail: '乐芙兰抛出一条锁链来束缚命中的第一个敌人。如果目标持续被束缚1.5秒，那么目标就会受到额外的魔法伤害并且被禁锢。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/LeblancE.png');
+    var R = SkillInfo(
+        skillName: '故技重施',
+        skillDetail: '乐芙兰可以施放她一个技能的故技重施版。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/LeblancR.png');
 
     var hero = Hero(
         id: 20200807,
@@ -61,22 +597,38 @@ class HeroData {
         secondName: '乐芙兰',
         avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small7000.jpg',
         bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big7000.jpg',
-        skinList: [skin01, skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09],
-        labelList: ['刺客','法师','中单'],
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09
+        ],
+        labelList: ['刺客', '法师', '中单'],
         strength: Strength(
             physicsAttr: 1, magicAttr: 10, defenseAttr: 4, operateAttr: 9),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
-        backStory: '即使是在秘密团体黑色玫瑰的成员内部，乐芙兰也同样保持神秘，而乐芙兰这个名字也只是众多化名之一。这个皮肤惨白的女人自从诺克萨斯建国初期就开始操纵大小人物，推动事态发展。这位女法师能用魔法制造自己的镜像，她可以出现在任何地点、任何人面前、甚至同时现身于许多地方。乐芙兰永远都在暗处密谋策划，而她真正的动机和她变换不定的身份一样令人难以捉摸。',
-        useList: ['魔影谜踪和故技重施一起释放，可以让对方难以猜出你要回到哪一个魔影谜踪的法阵上。',
-        '使用魔影迷踪可以帮助你有好的站位来施放幻影锁链。',
-        '你可以用恶意魔印与幻影锁链来防止有闪现技能的角色逃跑，最多持续4秒。'],
-        enemyUseList: ['乐芙兰的终极技能可以在她的技能施放期间，或是，少见地在一个遥远的位置创造一个假的乐芙兰。',
-        '在远处创造的假乐芙兰将会跑向距它最近的敌方英雄，施放一个无害的技能，随后立刻消失。',
-        '要先对乐芙兰发起攻击，来规避她的大部分小诡计，尤其是她在近期用过她的位移技能【魔影迷踪】时。',
-        '晕眩或沉默乐芙兰将阻止她激活【魔影迷踪】返回。']);
+        backStory:
+            '即使是在秘密团体黑色玫瑰的成员内部，乐芙兰也同样保持神秘，而乐芙兰这个名字也只是众多化名之一。这个皮肤惨白的女人自从诺克萨斯建国初期就开始操纵大小人物，推动事态发展。这位女法师能用魔法制造自己的镜像，她可以出现在任何地点、任何人面前、甚至同时现身于许多地方。乐芙兰永远都在暗处密谋策划，而她真正的动机和她变换不定的身份一样令人难以捉摸。',
+        useList: [
+          '魔影谜踪和故技重施一起释放，可以让对方难以猜出你要回到哪一个魔影谜踪的法阵上。',
+          '使用魔影迷踪可以帮助你有好的站位来施放幻影锁链。',
+          '你可以用恶意魔印与幻影锁链来防止有闪现技能的角色逃跑，最多持续4秒。'
+        ],
+        enemyUseList: [
+          '乐芙兰的终极技能可以在她的技能施放期间，或是，少见地在一个遥远的位置创造一个假的乐芙兰。',
+          '在远处创造的假乐芙兰将会跑向距它最近的敌方英雄，施放一个无害的技能，随后立刻消失。',
+          '要先对乐芙兰发起攻击，来规避她的大部分小诡计，尤其是她在近期用过她的位移技能【魔影迷踪】时。',
+          '晕眩或沉默乐芙兰将阻止她激活【魔影迷踪】返回。'
+        ]);
     return hero;
   }
 
+  /// 无畏战车 厄加特
   static Hero urgot() {
     Skin skin01 = Skin(
       skinName: '无畏战车 厄加特',
@@ -165,6 +717,7 @@ class HeroData {
     return hero;
   }
 
+  /// 德邦总管 赵信
   static Hero zhaoxin() {
     Skin skin01 = Skin(
       skinName: '德邦总管 赵信',

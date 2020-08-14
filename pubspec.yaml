@@ -24,8 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^4.3.2 # 状态管理
-  sticky_headers: "^0.1.8" # 吸顶效果
+  sticky_headers: ^0.1.8 # 吸顶效果
   after_layout: ^1.0.7+2 # 延迟加载
+  cached_network_image: ^2.2.0+1 # 网络图片缓存
 
 
   # The following adds the Cupertino Icons font to your application.

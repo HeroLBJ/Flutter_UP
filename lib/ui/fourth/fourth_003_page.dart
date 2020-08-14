@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/AppBarTool.dart';
+import 'package:flutter_up/tool/hero/Hero.dart' as Hero;
 import 'package:flutter_up/tool/hero/HeroTool.dart';
+import 'package:flutter_up/ui/widget/image/ImageView.dart';
 
 class Fourth003Page extends StatefulWidget {
   @override
@@ -10,26 +12,29 @@ class Fourth003Page extends StatefulWidget {
 class _Fourth003PageState extends State<Fourth003Page> {
   @override
   Widget build(BuildContext context) {
+    var heroList = HeroTool.getHeroList();
     return Scaffold(
       appBar: AppBarTool.getAppBar(context, '英雄默认皮肤'),
       body: Container(
         margin: EdgeInsets.all(10),
-        child: GridView.count(
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
-          crossAxisCount: 2,
-          childAspectRatio: 1.96,
-          children: _gridChild(),
-        ),
+        child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
+              crossAxisCount: 2,
+              childAspectRatio: 1.96,
+            ),
+            itemCount: heroList.length,
+            itemBuilder: (context, index) => _buildChild(heroList[index])),
       ),
     );
   }
 
-  _gridChild() {
-    List<Widget> list = [];
-    HeroTool.getHeroAvatar(isBig: true).forEach((element) {
-      list.add(Image.network(element,fit: BoxFit.cover,));
-    });
-    return list;
+  _buildChild(Hero.Hero hero) {
+    return ImageView(
+      imageUrl: hero.bigAvatar,
+      circular: 5,
+      onTop: () {},
+    );
   }
 }

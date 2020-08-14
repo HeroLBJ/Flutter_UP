@@ -13,7 +13,11 @@ class HeroTool {
     heroList.add(HeroData.twist()); // 004
     heroList.add(HeroData.zhaoxin()); // 005
     heroList.add(HeroData.urgot()); // 006
-    heroList.add(HeroData.leblanc());
+    heroList.add(HeroData.leblanc()); // 007
+    heroList.add(HeroData.vladimir()); // 008
+    heroList.add(HeroData.fiddlesticks()); // 009
+    heroList.add(HeroData.kayle()); // 010
+    heroList.add(HeroData.masteryi()); // 011
     return heroList;
   }
 

@@ -3,10 +3,12 @@ import 'package:flutter_up/tool/WidgetTool.dart';
 import 'package:flutter_up/ui/third/third001/third_001_page.dart';
 import 'package:flutter_up/ui/third/third002/third_002_page.dart';
 import 'package:flutter_up/ui/third/third003/third_003_page.dart';
+import 'package:flutter_up/ui/third/third004/third_004_page.dart';
 
 class ThirdMainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print('ThirdMainPage --> build');
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -28,6 +30,10 @@ class ThirdMainPage extends StatelessWidget {
           contentChild('AfterLayout插件', () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => Third003Page()));
+          }),
+          contentChild('Provider的基本使用', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Third004Page()));
           }),
         ],
       ),
