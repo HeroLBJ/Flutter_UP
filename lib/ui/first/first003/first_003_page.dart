@@ -126,7 +126,6 @@ class _First003PageState extends State<First003Page>
             Text(
                 '${Provider.of<First003Provider>(context).gameTime.toStringAsFixed(1)}s',
                 style: TextStyle(
-                    color: Colors.black,
                     fontSize: 32,
                     fontWeight: FontWeight.bold)),
             SizedBox(height: 15),

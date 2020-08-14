@@ -46,7 +46,6 @@ class _First001PageState extends State<First001Page>
       tabs: _buildTabBarChild(),
       labelStyle: activeStyle,
       labelColor: Colors.orange,
-      unselectedLabelColor: Colors.black,
       unselectedLabelStyle: defaultStyle,
       indicatorSize: TabBarIndicatorSize.label,
     );

@@ -27,6 +27,7 @@ dependencies:
   sticky_headers: ^0.1.8 # 吸顶效果
   after_layout: ^1.0.7+2 # 延迟加载
   cached_network_image: ^2.2.0+1 # 网络图片缓存
+  bot_toast: ^3.0.1 # 全局弹框
 
 
   # The following adds the Cupertino Icons font to your application.

@@ -28,7 +28,6 @@ class Third004Page extends StatelessWidget {
               return Text(
                 '${num}',
                 style: TextStyle(
-                    color: Colors.black,
                     fontSize: 24,
                     fontWeight: FontWeight.bold),
               );
@@ -42,7 +41,6 @@ class Third004Page extends StatelessWidget {
                 return Text(
                   '${result.num}',
                   style: TextStyle(
-                      color: Colors.black,
                       fontSize: 24,
                       fontWeight: FontWeight.bold),
                 );

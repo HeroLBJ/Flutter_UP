@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_up/tool/provider/ThemeProvider.dart';
+import 'package:provider/provider.dart';
 
 class AppBarTool {
   static getAppBar(BuildContext context, String title,
@@ -20,7 +22,9 @@ class AppBarTool {
       ),
       actions: <Widget>[
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Provider.of<ThemeProvider>(context,listen: false).switchTheme();
+          },
           child: Icon(Icons.brightness_high, color: color),
         ),
         SizedBox(width: 10),

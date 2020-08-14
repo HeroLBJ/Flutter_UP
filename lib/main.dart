@@ -1,5 +1,8 @@
+import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/provider/ProviderTool.dart';
+import 'package:flutter_up/tool/provider/ThemeProvider.dart';
+import 'package:flutter_up/tool/toast/ToastTool.dart';
 import 'package:flutter_up/ui/first/first_main_page.dart';
 import 'package:flutter_up/ui/fourth/fourth_main_page.dart';
 import 'package:flutter_up/ui/second/second_main_page.dart';
@@ -16,12 +19,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FLUTTER',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Index(),
+      builder: BotToastInit(),
+      navigatorObservers: [BotToastNavigatorObserver()],
+      theme: Provider.of<ThemeProvider>(context).getTheme(),
+      home: WillPopBack(),
     );
+  }
+}
+
+// ignore: must_be_immutable
+class WillPopBack extends StatelessWidget {
+  DateTime currentDateTime;
+
+  @override
+  Widget build(BuildContext context) {
+    return WillPopScope(
+        child: Index(),
+        onWillPop: () async {
+          if (currentDateTime == null ||
+              DateTime.now().difference(currentDateTime) >=
+                  Duration(seconds: 2)) {
+            ToastTool.showText('再按一次退出');
+            currentDateTime = DateTime.now();
+            return false;
+          } else {
+            return true;
+          }
+        });
   }
 }
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/WidgetTool.dart';
+import 'package:flutter_up/tool/provider/ThemeProvider.dart';
 import 'package:flutter_up/ui/first/first001/first_001_page.dart';
 import 'package:flutter_up/ui/first/first003/first_003_page.dart';
 import 'package:flutter_up/ui/first/first003/first_003_provider.dart';
@@ -12,6 +13,14 @@ class FirstMainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.wb_sunny),
+              onPressed: () {
+                Provider.of<ThemeProvider>(context, listen: false)
+                    .switchTheme();
+              })
+        ],
         centerTitle: true,
         title: Text(
           '无聊的编码',
