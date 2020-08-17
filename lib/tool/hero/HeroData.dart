@@ -1,6 +1,250 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 亡灵战神 塞恩
+  static Hero sion() {
+    Skin skin01 = Skin(
+      skinName: '亡灵战神 塞恩',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small14000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '钢铁终结者 塞恩',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small14001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '武仙座海格力斯 塞恩',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small14002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '原野伐木工 塞恩',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small14003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '战争机器 塞恩',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small14004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '霸天零式 塞恩',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small14005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '创世魔神 塞恩',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14014.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small14014.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '死亡荣耀',
+        skillDetail:
+            '在被击杀后，赛恩会回光返照一段时间并且生命值会快速衰减。在此期间，他的攻击会变得超快，获得生命偷取，并且每次攻击会额外造成基于目标最大生命值的额外伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Sion_Passive1.png');
+    var Q = SkillInfo(
+        skillName: '残虐猛击',
+        skillDetail:
+            '赛恩开始蓄力，并在释放时对他前方的一个区域进行一次强劲的猛击，对区域内的敌人造成伤害。如果他蓄力时间足够久，那么被命中的敌人还会受到击飞和晕眩效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SionQ.png');
+    var W = SkillInfo(
+        skillName: '灵魂熔炉',
+        skillDetail:
+            '赛恩为自己套上护盾，并能在3秒后再次激活这个技能来对身边的敌人造成魔法伤害。在赛恩击杀敌人时，他会被动获得最大生命值。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SionW.png');
+    var E = SkillInfo(
+        skillName: '杀手怒吼',
+        skillDetail:
+            '赛恩发射一个短程冲击波，来对命中的第一个敌人造成伤害、减速效果和破甲效果。如果冲击波命中的是小兵或者野怪，那么目标敌方单位还会被击退，对沿途的所有敌方单位造成伤害、减速和护甲击碎效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SionE.png');
+    var R = SkillInfo(
+        skillName: '蛮横冲撞',
+        skillDetail:
+            '赛恩朝着一个方向冲锋，持续提升移动速度。他可以朝着鼠标悬停处进行微小的转向。当他与一名敌人产生碰撞时，他会基于敌人们与碰撞点之间的距离造成伤害和击飞效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SionR.png');
+
+    var hero = Hero(
+        id: 20200814,
+        firstName: '亡灵战神',
+        secondName: '塞恩',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small14000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big14000.jpg',
+        skinList: [skin01, skin02, skin03, skin04, skin05, skin06, skin07],
+        labelList: ['战士', '坦克', '打野'],
+        strength: Strength(
+            physicsAttr: 5, magicAttr: 7, defenseAttr: 8, operateAttr: 4),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '赛恩是一个来自先前时代的诺克萨斯战争英雄，曾经徒手掐死过一代德玛西亚国王。但他拒绝了死亡和湮灭，以活尸的状态继续为帝国效命。只要挡住他的去路，都会被他无差别地屠杀，敌我不分，足可证明他已经失去了从前的人性。即便如此，他腐朽的身体还是被钉进了粗糙的装甲，继续以丧心病狂的鲁莽冲上战场，在每一下巨斧的挥砍中艰难地回忆真正的自我。',
+        useList: [
+          '在【R蛮横冲撞】进行时，你只有非常微弱的转向能力，所以请先规划好冲撞的直线。',
+          '【E杀手怒吼】是一个强大的起手技能，可以为一记强劲的【Q残虐猛击】争取足够久的时间。'
+              '【W灵魂熔炉】的增益状态会显示护盾的剩余生命值，利用这个信息来完美选择它的爆炸时机。'
+        ],
+        enemyUseList: [
+          '即使会被赛恩的【Q残虐猛击】给命中，也要让赛恩提前放出这个技能，从而减少这个技能的影响力。',
+          '利用赛恩死后的时间来重新站位，并准备好迎接他的回光返照。'
+        ]);
+    return hero;
+  }
+
+  /// 符文法师 瑞兹
+  static Hero ryze() {
+    Skin skin01 = Skin(
+      skinName: '符文法师 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '青年 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '部落精神 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '美国大叔 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '守护者雕像 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '宗师级法师训练师 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '至死不渝 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '恶魔男爵 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '海贼 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '瑞兹*白须',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: 'SKT T1 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13010.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '冠军之志 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13011.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13011.jpg',
+    );
+    Skin skin13 = Skin(
+      skinName: '沙之守护者 瑞兹',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13013.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small13013.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '奥术专精',
+        skillDetail: '瑞兹的技能会造成基于他法力值加成的额外伤害，并且他的最大法力值会基于他的法术强度来获得百分比的提升。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Ryze_P.png');
+    var Q = SkillInfo(
+        skillName: '超负荷',
+        skillDetail:
+            '被动部分：瑞兹的其它基础技能会重置【超负荷】的冷却时间并且充能一层符文。当瑞兹带着2层符文施放【超负荷】时，他会获得短暂的爆发性移动速度加成。\n施放时，瑞兹会沿直线扔出一团纯粹能量，来对命中的第一个敌人造成伤害。如果目标身上有【涌动】效果，那么【超负荷】会造成额外伤害并弹射至附近带有【涌动】效果的敌人身上。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/RyzeQ.png');
+    var W = SkillInfo(
+        skillName: '符文禁锢',
+        skillDetail:
+            '瑞兹将一个目标陷入一个符文牢笼中，来对其造成伤害和减速效果。如果目标身上带有【涌动】效果，那么减速效果会替换为禁锢效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/RyzeW.png');
+    var E = SkillInfo(
+        skillName: '法术涌动',
+        skillDetail:
+            '瑞兹放出一颗纯净魔法能量球，对一名敌人造成伤害并对附近的敌人造成减益效果。瑞兹的技能可以对带有该减益的敌人造成额外效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/RyzeE.png');
+    var R = SkillInfo(
+        skillName: '曲境折跃',
+        skillDetail:
+            '被动部分：【超负荷】对带有【涌动】效果的目标造成更多伤害。\n施放时，瑞兹会创造一个传送门来通向一个附近的位置。在若干秒后，站在传送门附近的友军会被传送至目标位置。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/RyzeR.png');
+
+    var hero = Hero(
+        id: 20200813,
+        firstName: '符文法师',
+        secondName: '瑞兹',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small13000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big13000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12,
+          skin13
+        ],
+        labelList: ['法师', '战士', '上单'],
+        strength: Strength(
+            physicsAttr: 2, magicAttr: 10, defenseAttr: 2, operateAttr: 7),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '瑞兹是符文之地广为人知的最老练的法师之一。他生于远古，饱经风霜，肩负着不可承受之重任。这位大法师的武器，是他无可摧折的决心和丰富的秘法学识，他一生都在寻找着世界符文 ——它们是令这世界从无到有、万物成形的原生魔法所留下的碎片。他一定要找到所有这些神秘的字符，以免落入恶人之手，因为瑞兹知道它们可能给符文之地带来怎样的浩劫。',
+        useList: [
+          '使用【Q超负荷】的被动来最大化伤害或移动速度。',
+          '【E法术涌动】的冷却时间很短，可以利用这点来将【涌动】效果散播到多个敌人身上。',
+          '在【R曲境折跃】的充能期间，瑞兹可以移动并施放其它技能，并且这么做不会导致传送门被取消。'
+        ],
+        enemyUseList: [
+          '对那些身上带有【涌动】效果的人来说，瑞兹尤为危险。',
+          '要利用【曲境折跃】的施放时间来想好如何处理即将从传送门中出现的敌人。',
+          '在瑞兹施放【曲境折跃】期间，如果能用控制技能使他无法施法或无法移动，那么这个技能就会被取消。'
+        ]);
+    return hero;
+  }
+
   /// 牛头酋长 阿利斯塔
   static Hero alistar() {
     Skin skin01 = Skin(
@@ -120,9 +364,9 @@ class HeroData {
         id: 20200812,
         firstName: '牛头酋长',
         secondName: '阿利斯塔',
-        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small12000.jpg',
         bigAvatar:
-            'https://game.gtimg.cn/images/lol/act/img/skin/small12000.jpg',
+            'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
         skinList: [
           skin01,
           skin02,
@@ -300,7 +544,7 @@ class HeroData {
       skinName: '正义天使 凯尔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10000.jpg',
       skinSmallImg:
-          'https://game.gtimg.cn/images/lol/act/img/skin/small0000.jpg',
+          'https://game.gtimg.cn/images/lol/act/img/skin/small10000.jpg',
     );
     Skin skin02 = Skin(
       skinName: '银白审判 凯尔',

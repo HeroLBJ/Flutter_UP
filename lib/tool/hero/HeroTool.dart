@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter_up/tool/hero/Hero.dart';
 import 'package:flutter_up/tool/hero/HeroData.dart';
 
-
 class HeroTool {
   /// 获取所有英雄列表
   static List<Hero> getHeroList() {
@@ -20,6 +19,8 @@ class HeroTool {
     heroList.add(HeroData.kayle()); // 010
     heroList.add(HeroData.masteryi()); // 011
     heroList.add(HeroData.alistar()); // 012
+    heroList.add(HeroData.ryze()); // 013
+    heroList.add(HeroData.sion()); // 014
     return heroList;
   }
 
