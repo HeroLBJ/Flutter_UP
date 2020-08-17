@@ -19,6 +19,7 @@ class HeroTool {
     heroList.add(HeroData.fiddlesticks()); // 009
     heroList.add(HeroData.kayle()); // 010
     heroList.add(HeroData.masteryi()); // 011
+    heroList.add(HeroData.alistar()); // 012
     return heroList;
   }
 

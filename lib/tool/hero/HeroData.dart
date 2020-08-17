@@ -1,6 +1,163 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 牛头酋长 阿利斯塔
+  static Hero alistar() {
+    Skin skin01 = Skin(
+      skinName: '牛头酋长 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '暗黑灵魂 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '金牛座 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '斗牛士 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '荒野镖客 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '巨角幻兽 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '地狱火 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '后场堡垒 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '黑暗骑士 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: 'SKT T1 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '哞利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12010.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '海克斯科技 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12019.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12019.jpg',
+    );
+    Skin skin13 = Skin(
+      skinName: '征服者 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12020.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12020.jpg',
+    );
+    Skin skin14 = Skin(
+      skinName: '黯晶巨牛 阿利斯塔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12022.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small12022.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '凯旋怒吼',
+        skillDetail:
+            '阿利斯塔在对敌方英雄造成晕眩或强制位移时，或附近有敌人阵亡时，会积攒他的怒吼层数。在层数攒满后，他会治疗他自己和所有附近的友方英雄。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Alistar_E.png');
+    var Q = SkillInfo(
+        skillName: '大地粉碎',
+        skillDetail: '阿利斯塔锤击地面，对附近的敌人造成魔法伤害并使他们浮空。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/Pulverize.png');
+    var W = SkillInfo(
+        skillName: '野蛮冲撞',
+        skillDetail: '阿利斯塔冲撞目标，对其造成伤害并击退目标。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/Headbutt.png');
+    var E = SkillInfo(
+        skillName: '践踏',
+        skillDetail:
+            '阿利斯塔践踏附近的敌方单位，无视单位的碰撞体积并在他伤害到一名敌方英雄时获得一层充能。在满层充能时，阿利斯塔的下次对敌方英雄发起的普攻将造成额外魔法伤害和晕眩效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/AlistarE.png');
+    var R = SkillInfo(
+        skillName: '坚定意志',
+        skillDetail: '阿利斯塔发出野性的咆哮，移除身上所有控制效果，并且持续时间内所受的物理和魔法伤害将减少。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/FerociousHowl.png');
+
+    var hero = Hero(
+        id: 20200812,
+        firstName: '牛头酋长',
+        secondName: '阿利斯塔',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
+        bigAvatar:
+            'https://game.gtimg.cn/images/lol/act/img/skin/small12000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12,
+          skin13,
+          skin14
+        ],
+        labelList: [''],
+        strength: Strength(
+            physicsAttr: 0, magicAttr: 0, defenseAttr: 0, operateAttr: 0),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '阿利斯塔一直都是威名远扬的巨力勇士，他要为自己被屠杀的氏族向诺克萨斯帝国复仇。虽然他曾被奴役，并被迫成为斗兽场中的角斗士，但他坚不可摧的意志使他免于沦为真正的野兽。现在，挣脱了奴役枷锁的他继续以受苦之人和弱者的名义战斗。他的愤怒，还有犄角、蹄子和拳头，都是他的武器。',
+        useList: [
+          '使用大地粉碎可以让你在更好的位置施放野蛮冲撞。',
+          '移动速度对于阿利斯塔非常重要，因此买鞋时要慎重考虑。',
+          '使用闪现可以让你抓住毫无防备的目标，继而用大地粉碎与野蛮冲撞将他们撞回你的友军中。'
+        ],
+        enemyUseList: [
+          '阿利斯塔具有很强的破坏力也很结实，尝试着攻击更脆弱的输出型英雄才是更好的选择。'
+              '在敌方防御塔附近时要小心大地粉碎和野蛮冲撞的连击。'
+              '当阿利斯塔使用终极技能时，你可以后退并等到效果消逝后，再对其进行攻击。'
+        ]);
+    return hero;
+  }
+
   /// 无极剑圣 易
   static Hero masteryi() {
     Skin skin01 = Skin(
