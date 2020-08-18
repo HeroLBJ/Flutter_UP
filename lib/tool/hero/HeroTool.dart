@@ -7,20 +7,22 @@ class HeroTool {
   /// 获取所有英雄列表
   static List<Hero> getHeroList() {
     var heroList = List<Hero>();
-    heroList.add(HeroData.annie()); // 001
-    heroList.add(HeroData.olaf()); // 002
-    heroList.add(HeroData.galio()); // 003
-    heroList.add(HeroData.twist()); // 004
-    heroList.add(HeroData.zhaoxin()); // 005
-    heroList.add(HeroData.urgot()); // 006
-    heroList.add(HeroData.leblanc()); // 007
-    heroList.add(HeroData.vladimir()); // 008
-    heroList.add(HeroData.fiddlesticks()); // 009
-    heroList.add(HeroData.kayle()); // 010
-    heroList.add(HeroData.masteryi()); // 011
-    heroList.add(HeroData.alistar()); // 012
-    heroList.add(HeroData.ryze()); // 013
-    heroList.add(HeroData.sion()); // 014
+    heroList.add(HeroData.Annie()); // 001
+    heroList.add(HeroData.Olaf()); // 002
+    heroList.add(HeroData.Galio()); // 003
+    heroList.add(HeroData.Twist()); // 004
+    heroList.add(HeroData.ZhaoXin()); // 005
+    heroList.add(HeroData.Urgot()); // 006
+    heroList.add(HeroData.Leblanc()); // 007
+    heroList.add(HeroData.Vladimir()); // 008
+    heroList.add(HeroData.Fiddlesticks()); // 009
+    heroList.add(HeroData.Kayle()); // 010
+    heroList.add(HeroData.Masteryi()); // 011
+    heroList.add(HeroData.Alistar()); // 012
+    heroList.add(HeroData.Ryze()); // 013
+    heroList.add(HeroData.Sion()); // 014
+    heroList.add(HeroData.Sivir()); // 015
+    heroList.add(HeroData.Soraka()); // 016
     return heroList;
   }
 

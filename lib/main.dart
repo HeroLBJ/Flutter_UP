@@ -18,6 +18,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ColorTool.init(context);
+
+//    if (Platform.isAndroid) {
+//      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+//        statusBarColor: Colors.white,
+//        statusBarBrightness: Brightness.dark,
+//        statusBarIconBrightness: Brightness.dark,
+//      ));
+//    }
+
     return MaterialApp(
       title: 'FLUTTER',
       debugShowCheckedModeBanner: false,

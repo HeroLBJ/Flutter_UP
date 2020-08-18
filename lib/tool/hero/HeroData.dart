@@ -1,8 +1,282 @@
 import 'Hero.dart';
 
 class HeroData {
+  // 众星之子 索拉卡
+  static Hero Soraka() {
+    Skin skin01 = Skin(
+      skinName: '众星之子 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '森林女神 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '月光女神阿忒弥斯 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '圣洁化身 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '灵魂收割者 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '蕉泥座人 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '源代码 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '星之守护者 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '睡衣守护者 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '冬境仙灵 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '黎明使者 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16015.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16015.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '黑夜使者 索拉卡',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16016.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small16016.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '救赎',
+        skillDetail: '索拉卡在朝着附近低血量的友方英雄移动时会提升移动速度。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/Soraka_Passive.png');
+    var Q = SkillInfo(
+        skillName: '流星坠落',
+        skillDetail:
+            '一颗流星从天而降，落在目标地点，造成魔法伤害，并对区域中心的敌人造成减速效果。如果一名敌人被此技能命中，那么索拉卡就会回复生命值。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SorakaQ.png');
+    var W = SkillInfo(
+        skillName: '星之灌注',
+        skillDetail: '索拉卡牺牲自己的一部分生命值来治疗一个友方英雄。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SorakaW.png');
+    var E = SkillInfo(
+        skillName: '星体结界',
+        skillDetail: '在目标区域创造一个结界，沉默结界中的所有敌人。当结界消散时，仍在结界内的敌人会被禁锢。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SorakaE.png');
+    var R = SkillInfo(
+        skillName: '祈愿',
+        skillDetail: '索拉卡让友军充满希望，立刻使她和所有友方英雄回复生命值。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SorakaR.png');
+
+    var hero = Hero(
+        id: 20200816,
+        firstName: '众星之子',
+        secondName: '索拉卡',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small16000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big16000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12
+        ],
+        labelList: ['辅助','法师','上单'],
+        strength: Strength(
+            physicsAttr: 2, magicAttr: 7, defenseAttr: 5, operateAttr: 3),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '索拉卡是来自巨神峰彼端天界维度的流浪者。她放弃了不朽的神格，保护凡间的种族免遭他们自身暴力本能的伤害。她对自己遇见的每个人都施以同情与仁慈——即使是那些对她心存恶念的人也不例外。虽然索拉卡见证了这世上如此多的苦痛与挣扎，但她依然相信符文之地的人们依然有更多潜力尚未发现。',
+        useList: [
+          '索拉卡是个很强大的盟友，用她的治疗技能让己方团队不停前进。',
+          '你可以在地图的任意位置用【R祈愿】拯救原本要丧命的队友。',
+          'E星体结界】在限制敌方走位时非常强大。'
+        ],
+        enemyUseList: [
+          '在团战中，如果索拉卡冲到前线治疗她的队友，那么就集中火力攻击索拉卡。',
+          '如果索拉卡将【E星体结界】用来压制，那么可以利用这个技能冷却时间长的特点来赚取优势。',
+          '集火索拉卡要比集火她正在治疗的友军更轻松。'
+        ]);
+    return hero;
+  }
+
+  /// 战争女神 希维尔
+  static Hero Sivir() {
+    Skin skin01 = Skin(
+      skinName: '战争女神 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '战场公主 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '亮丽女神 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '女猎手 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '钢铁之心 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '创战纪 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '冰雪风暴 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '光明骑士 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '胜利女神 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '新创战纪 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '送披萨的小姐姐 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15010.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '腥红之月 希维尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15016.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small15016.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '敏锐疾行',
+        skillDetail: '希维尔在攻击一名敌方英雄时，会短暂地获得移动速度提升。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Sivir_Passive.png');
+    var Q = SkillInfo(
+        skillName: '回旋之刃',
+        skillDetail: '希维尔像挥舞回力标一样挥出她的十字刃，并在往返时造成伤害。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SivirQ.png');
+    var W = SkillInfo(
+        skillName: '弹射',
+        skillDetail: '希维尔的下几次普通攻击将弹射到周围的目标上，对次要目标造成较少伤害。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SivirW.png');
+    var E = SkillInfo(
+        skillName: '法术护盾',
+        skillDetail: '制造一层法术屏障，来格挡一次敌方单体技能。如果希维尔成功格挡了一次技能，那么就会回复法力值。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SivirE.png');
+    var R = SkillInfo(
+        skillName: '狩猎',
+        skillDetail:
+            '希维尔在战斗中引领她的友军，为他们提供持续一段时间的爆发性移动速度加成。此外，这个技能还会在弹射激活时，为希维尔提供被动的攻击速度加成。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/SivirR.png');
+
+    var hero = Hero(
+        id: 20200815,
+        firstName: '战争女神',
+        secondName: '希维尔',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small15000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big15000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12
+        ],
+        labelList: ['射手', 'ADC'],
+        strength: Strength(
+            physicsAttr: 9, magicAttr: 1, defenseAttr: 3, operateAttr: 3),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '希维尔是著名的宝藏猎人和雇佣兵队长，在恕瑞玛沙漠中进行频繁的契约交易。她的兵器是一柄颇具传奇色彩的十字刃，她曾赢得过无数次战斗，虽然她本人报价不菲，但却深得雇主青睐。她有着著名的无畏决心和无尽的野心，并且以自己的事业为傲——只要赏金够高，她就能从凶险的恕瑞玛古墓中寻回深埋于地下的宝藏。不过随着好几股远古的力量搅动着恕瑞玛的根骨，希维尔突然发现自己被裹挟着、拉扯着，卷入了截然不同的命运。',
+        useList: [
+          '希维尔的回旋之刃在到达最远射程后会飞回她手中，因此在扔出后你可以调整位置使它更容易命中敌人。',
+          '弹射会立刻重置希维尔的普通攻击，所以在进行一次普攻之后立刻激活它，就能最大化伤害输出。',
+          '尽量留着法术护盾，来帮你抵挡那些可以限制你的技能，例如：晕眩和束缚。'
+        ],
+        enemyUseList: [
+          '回旋之刃会消耗大量法力值，躲避该技能会让希维尔受挫。如果她在扔出去时击中了你，在其返回时你要避免再次被击中。',
+          '希维尔是一个强大的推线英雄，所以如果任由她独自推线的话，你将发现己方的防御塔很快就被摧毁了。',
+          '当你使用一个法师与希维尔对线时，你可以假装压上施法再退回，来诱骗她用掉法术护盾。'
+        ]);
+    return hero;
+  }
+
   /// 亡灵战神 塞恩
-  static Hero sion() {
+  static Hero Sion() {
     Skin skin01 = Skin(
       skinName: '亡灵战神 塞恩',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14000.jpg',
@@ -99,7 +373,7 @@ class HeroData {
   }
 
   /// 符文法师 瑞兹
-  static Hero ryze() {
+  static Hero Ryze() {
     Skin skin01 = Skin(
       skinName: '符文法师 瑞兹',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13000.jpg',
@@ -246,7 +520,7 @@ class HeroData {
   }
 
   /// 牛头酋长 阿利斯塔
-  static Hero alistar() {
+  static Hero Alistar() {
     Skin skin01 = Skin(
       skinName: '牛头酋长 阿利斯塔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
@@ -365,8 +639,7 @@ class HeroData {
         firstName: '牛头酋长',
         secondName: '阿利斯塔',
         avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small12000.jpg',
-        bigAvatar:
-            'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
         skinList: [
           skin01,
           skin02,
@@ -403,7 +676,7 @@ class HeroData {
   }
 
   /// 无极剑圣 易
-  static Hero masteryi() {
+  static Hero Masteryi() {
     Skin skin01 = Skin(
       skinName: '无极剑圣 易',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11000.jpg',
@@ -539,7 +812,7 @@ class HeroData {
   }
 
   /// 正义天使 凯尔
-  static Hero kayle() {
+  static Hero Kayle() {
     Skin skin01 = Skin(
       skinName: '正义天使 凯尔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10000.jpg',
@@ -663,7 +936,7 @@ class HeroData {
   }
 
   /// 远古恐惧 费德提克
-  static Hero fiddlesticks() {
+  static Hero Fiddlesticks() {
     Skin skin01 = Skin(
       skinName: '远古恐惧 费德提克',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9000.jpg',
@@ -782,7 +1055,7 @@ class HeroData {
   }
 
   /// 猩红收割者 费拉基米尔
-  static Hero vladimir() {
+  static Hero Vladimir() {
     Skin skin01 = Skin(
       skinName: '猩红收割者 费拉基米尔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8000.jpg',
@@ -909,7 +1182,7 @@ class HeroData {
   }
 
   /// 诡术妖姬 乐芙兰
-  static Hero leblanc() {
+  static Hero Leblanc() {
     Skin skin01 = Skin(
       skinName: '诡术妖姬 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7000.jpg',
@@ -1030,7 +1303,7 @@ class HeroData {
   }
 
   /// 无畏战车 厄加特
-  static Hero urgot() {
+  static Hero Urgot() {
     Skin skin01 = Skin(
       skinName: '无畏战车 厄加特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6000.jpg',
@@ -1119,7 +1392,7 @@ class HeroData {
   }
 
   /// 德邦总管 赵信
-  static Hero zhaoxin() {
+  static Hero ZhaoXin() {
     Skin skin01 = Skin(
       skinName: '德邦总管 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5000.jpg',
@@ -1237,7 +1510,7 @@ class HeroData {
   }
 
   /// 卡牌大师 崔斯特
-  static Hero twist() {
+  static Hero Twist() {
     Skin skin00 = Skin(
       skinName: '卡牌大师 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4000.jpg',
@@ -1375,7 +1648,7 @@ class HeroData {
   }
 
   /// 正义巨像 加里奥
-  static Hero galio() {
+  static Hero Galio() {
     Skin skin00 = Skin(
       skinName: '正义巨像 加里奥',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3000.jpg',
@@ -1483,7 +1756,7 @@ class HeroData {
   }
 
   /// 狂战士 奥拉夫
-  static Hero olaf() {
+  static Hero Olaf() {
     Skin skin00 = Skin(
       skinName: '狂战士 奥拉夫',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big2000.jpg',
@@ -1605,7 +1878,7 @@ class HeroData {
   }
 
   /// 黑暗之女 安妮
-  static Hero annie() {
+  static Hero Annie() {
     Skin skin00 = Skin(
         skinName: '黑暗之女 安妮',
         skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big1000.jpg',

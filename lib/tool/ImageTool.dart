@@ -1,4 +1,40 @@
 class ImageTool {
+
+  static List<String> dashengguilai(){
+    var list = List<String>();
+    list.add('https://up.enterdesk.com/edpic_source/73/49/59/7349592d87541dc78f015666a01195ee.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/b5/be/80/b5be80e9ecc5ec5a3af5389643b4701b.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/aa/ae/1b/aaae1bb83597b8a2192f4f2d20e142e1.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/2c/e0/c6/2ce0c6b12434ace381194a5ea4f682e2.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/ef/ac/15/efac154b0f3bd4b1a2cf764b5e3ae31f.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/21/b5/1c/21b51cec7cb538f13d2fd9f9a8ebea75.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/0f/bd/01/0fbd01d30e459426204699dd6b830346.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/5d/90/69/5d9069f3cda182c0ec6c5e444c4c12c4.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/2b/fd/de/2bfdde64f3f9b7e92e7084699121d82b.jpg');
+    list.add('https://up.enterdesk.com/edpic_source/d8/96/29/d896297bbc2271fc3aae95ecf7b0a552.jpg');
+    return list;
+  }
+
+  static List<String> nezha(){
+    var list = List<String>();
+    list.add('http://img.wxcha.com/file/201907/30/dbf7d321a4.jpg');
+    list.add('http://img.wxcha.com/file/201907/30/ef1cd57f63.jpg');
+    return list;
+
+  }
+
+  static List<String> getGirl() {
+    var list = List<String>();
+    list.add(
+        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1055562147,2439105529&fm=26&gp=0.jpg');
+    list.add('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2986632841,1225510899&fm=26&gp=0.jpg');
+    list.add('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597662998684&di=41f3d158000643700e8756a8580dfb61&imgtype=0&src=http%3A%2F%2Fpic.qqtn.com%2Fup%2F2018-8%2F15356777505774214.jpg');
+    list.add('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597663022115&di=4b605edfade2f904a7ee7e19d150077c&imgtype=0&src=http%3A%2F%2Fimg.qqkjkl.com%2Fd%2Ffile%2F15123547131742368.jpg');
+    list.add('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597663042753&di=2da65baa0b8343563fc30be352fb794c&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F11%2F20180611145945_dhjok.thumb.700_0.jpg');
+    list.add('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597663085880&di=17fb2547a8249af37615ccbbaf97e2d3&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3Dd3137e4d8cd6277fe912323018391f63%2F86040d014c086e064987d5bd09087bf40bd1cbb3.jpg');
+    return list;
+  }
+
   static List<String> getImage() {
     var list = List<String>();
     list.add(img01);
