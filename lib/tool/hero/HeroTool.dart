@@ -23,6 +23,8 @@ class HeroTool {
     heroList.add(HeroData.Sion()); // 014
     heroList.add(HeroData.Sivir()); // 015
     heroList.add(HeroData.Soraka()); // 016
+    heroList.add(HeroData.Teemo()); // 017
+    heroList.add(HeroData.Tristana()); // 018
     return heroList;
   }
 

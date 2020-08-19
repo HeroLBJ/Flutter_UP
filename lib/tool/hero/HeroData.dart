@@ -1,6 +1,244 @@
 import 'Hero.dart';
 
 class HeroData {
+
+  /// 麦林炮手 崔丝塔娜
+  static Hero Tristana() {
+    Skin skin01 = Skin(
+      skinName: '麦林炮手 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18000.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '粉色萝莉 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18001.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '圣诞精灵 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18002.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '烈焰雄心 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18003.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '游击队员 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18004.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '约德尔海贼团 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18005.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '火箭达人 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18006.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '驯龙炮手 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18010.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18010.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '魅惑女巫 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18011.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18011.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '欧米伽小队 魔鬼伞兵',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18012.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18012.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '小恶魔 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18024.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18024.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '我，羽饰骑士 崔丝塔娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18033.jpg',
+      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18033.jpg',
+    );
+
+    var P = SkillInfo(skillName: '瞄准', skillDetail: '崔丝塔娜的射程随等级提升。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/passive/Tristana_Passive.png');
+    var Q = SkillInfo(skillName: '急速射击', skillDetail: '崔丝塔娜急速射击，短时间内提升攻击速度。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaQ.png');
+    var W = SkillInfo(skillName: '火箭跳跃', skillDetail: '崔丝塔娜朝地面开火，跳跃至目标区域，落地造成伤害并减速附近敌人一小段时间。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaW.png');
+    var E = SkillInfo(skillName: '爆炸火花', skillDetail: '当崔丝塔娜杀死一个单位，加农炮弹会炸裂伤害周围的敌人。可通过主动施放这个技能来将一颗炸弹放置在目标身上，炸弹会在短时间内或被崔丝塔娜攻击数次后爆炸，爆炸时对目标及其附近的敌人造成伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaE.png');
+    var R = SkillInfo(skillName: '毁灭射击', skillDetail: '丝塔娜装填巨型加农炮弹攻击目标单位，造成巨大伤害并击退目标。如果目标携带着【爆炸火花】的炸弹，那么该炸弹的爆炸半径翻倍。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaR.png');
+
+    var hero = Hero(
+        id: 20200818,
+        firstName: '麦林炮手',
+        secondName: '崔丝塔娜',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small18000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big18000.jpg',
+        skinList: [skin01, skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09,skin10,skin11,skin12],
+        labelList: [''],
+        strength: Strength(
+            physicsAttr: 0, magicAttr: 0, defenseAttr: 0, operateAttr: 0),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory: '许多约德尔人都将自己的精力花在探索发现、发明创造或者搞恶作剧上，然而崔丝塔娜则一心向往伟大勇者们的冒险故事。她听闻了太多关于符文之地的事，关于不同的势力、关于庞大的战争。崔丝塔娜相信自己也有资格成为传奇。她首次踏进了这个世界，拿着她信赖的加农炮“轰隆”，用坚定的勇气和乐观精神跳进战场。',
+        useList: ['崔丝塔娜的巨枪可以让它远距离攻击目标。利用这个可以防止你的敌人靠近你。',
+    '在你对一个敌人叠满【爆炸火花】的层数后，再用【火箭跳跃】跳到这个敌人身上，就能对这个敌人造成爆发性的伤害。',
+    '你可以用【急速射击】来帮你尽快在敌方英雄身上叠满【爆炸火花】。'],
+        enemyUseList: ['如果你看见崔丝塔娜在交战中激活急速射击，那么晕眩她，并且后退，直到该技能消散。',
+    '对线时远离你的小兵，减少爆炸射击所带来的附带伤害。']);
+    return hero;
+  }
+
+  /// 迅捷斥候 提莫
+  static Hero Teemo() {
+    Skin skin01 = Skin(
+      skinName: '迅捷斥候 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '圣诞开心鬼 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '军情五处 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '密林猎手 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '提莫:"约德尔人的一大步"',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '兔宝宝 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '约德尔国队长 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '熊猫 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '欧米伽小队 幽灵特工',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '大魔王 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17014.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17014.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '小蜜蜂 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17018.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17018.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '灵魂莲华 提莫',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17025.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17025.jpg',
+    );
+    Skin skin13 = Skin(
+      skinName: '灵魂莲华 提莫 至臻',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17027.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small17027.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '游击队军备',
+        skillDetail:
+            '如果提莫在短时间内静止站立且不受任何伤害，就会进入无定期的隐形状态。如果提莫在草丛中，他就能在移动的同时进入并保持隐形状态。离开隐形状态后，提莫会获得“出奇制胜”的增益效果，提升攻击速度，持续3秒。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Teemo_P.png');
+    var Q = SkillInfo(
+        skillName: '致盲吹箭',
+        skillDetail: '用一团强力的毒液来侵蚀一名敌人的视野，对目标单位造成伤害并使目标致盲一段时间。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/BlindingDart.png');
+    var W = SkillInfo(
+        skillName: '小莫快跑',
+        skillDetail:
+            '提莫动如脱兔，提升移动速度，直到被敌方英雄或防御塔击中为止。提莫可以通过冲刺来获得额外移动速度，且短时间内不会因被击中而使加速效果中止。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MoveQuick.png');
+    var E = SkillInfo(
+        skillName: '毒性射击',
+        skillDetail: '提莫每次攻击附带毒液伤害，造成持续性伤害，持续4秒。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/ToxicShot.png');
+    var R = SkillInfo(
+        skillName: '种蘑菇',
+        skillDetail:
+            '提莫投掷一个可爆炸的毒性陷阱，需要消耗提莫背包里的一个蘑菇。陷阱会在被敌方踩中时爆炸，释放出一团毒云，对附近的敌人造成减速效果和持续伤害。如果提莫把一个蘑菇扔到另一个蘑菇上，那么这个蘑菇会进行弹跳，获得额外的施放距离。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TeemoRCast.png');
+
+    var hero = Hero(
+        id: 20200817,
+        firstName: '迅捷斥候',
+        secondName: '提莫',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small17000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big17000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12,
+          skin13
+        ],
+        labelList: ['射手','刺客','上单'],
+        strength: Strength(
+            physicsAttr: 5, magicAttr: 7, defenseAttr: 3, operateAttr: 4),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '不惧艰难险阻、不惧坎坷危途，提莫怀着无比的热情和欢欣的精神探索着整个世界。作为一个约德尔人，他对自己的道德观坚定不移，同时对班德尔斥候的信条感到自豪，有的时候，他的热忱甚至会让他无法看到，自己行为会在更大的意义上导致什么样的后果。虽然有的人认为这支斥候小队是否真正存在还有待商榷，但有一件事是肯定的：提莫的信念绝不容小觑。',
+        useList: [
+          '提莫的蘑菇用来打钱是很有效的。',
+          '将你的蘑菇放在地图上的关键位置，比如靠近龙或纳什男爵的地方，以便在敌人试图杀死他们的时候能侦查到。'
+        ],
+        enemyUseList: [
+          '提莫的毒性射击技能对被击中再退后的玩家同样有效，在你准备好反击之前要和提莫保持距离。',
+          '你可以用神谕透镜来安全地摧毁关键地区的蘑菇。'
+        ]);
+    return hero;
+  }
+
   // 众星之子 索拉卡
   static Hero Soraka() {
     Skin skin01 = Skin(
@@ -119,7 +357,7 @@ class HeroData {
           skin11,
           skin12
         ],
-        labelList: ['辅助','法师','上单'],
+        labelList: ['辅助', '法师', '上单'],
         strength: Strength(
             physicsAttr: 2, magicAttr: 7, defenseAttr: 5, operateAttr: 3),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
