@@ -25,6 +25,8 @@ class HeroTool {
     heroList.add(HeroData.Soraka()); // 016
     heroList.add(HeroData.Teemo()); // 017
     heroList.add(HeroData.Tristana()); // 018
+    heroList.add(HeroData.Warwick()); // 019
+    heroList.add(HeroData.Nunu()); // 020
     return heroList;
   }
 

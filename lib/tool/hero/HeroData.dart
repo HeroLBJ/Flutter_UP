@@ -1,75 +1,366 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 雪原双子 努努和威朗普
+  static Hero Nunu() {
+    Skin skin01 = Skin(
+      skinName: '雪原双子 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '荒野巨兽 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '圣诞狂欢 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '脏兮兮 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/big20003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '合金巨兽 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '攻城巨兽 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '暗杀星 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '丧尸 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '千纸双子 努努和威朗普',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20008.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '弗雷尔卓德的召唤',
+        skillDetail: '努努提升威朗普和一名附近友军的攻击速度和移动速度，并使威朗普的普攻可以伤害目标周围的敌人。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/NunuPassive.png');
+    var Q = SkillInfo(
+        skillName: '吞噬',
+        skillDetail: '威朗普撕咬一个小兵、野怪或敌方英雄，造成巨大伤害并回复自己的生命值。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/NunuQ.png');
+    var W = SkillInfo(
+        skillName: '史上最大雪球！',
+        skillDetail: '威朗普滚起一个雪球，它的尺寸和速度将随着滚动时间而增长。雪球会伤害并击飞敌人。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/NunuW.png');
+    var E = SkillInfo(
+        skillName: '雪球飞射',
+        skillDetail: '努努掷出多个雪球以伤害敌人。当他完成后，威朗普就会禁锢被雪球命中过的任何英雄或大型野怪。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/NunuE.png');
+    var R = SkillInfo(
+        skillName: '绝对零度',
+        skillDetail: '努努和威朗普在一个区域内创造一阵强大的暴风雪，来减速敌人并在结束时造成巨额伤害。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/NunuR.png');
+
+    var hero = Hero(
+        id: 20200820,
+        firstName: '雪原双子',
+        secondName: '努努和威朗普',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small20000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big20000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09
+        ],
+        labelList: ['辅助', '战士', '打野'],
+        strength: Strength(
+            physicsAttr: 0, magicAttr: 0, defenseAttr: 0, operateAttr: 0),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '很久以前，曾有个小男孩，他要证明自己是个英雄，于是决定去杀掉一头凶猛的怪兽——但他却发现这个怪兽其实是个孤独的魔法雪人，而且他需要的只是一个朋友。雪人和男孩被古老的力量所连结，也因对雪球的共同爱好而玩到一起。努努和威朗普如今在弗雷尔卓德的土地上肆意撒欢打滚，为想象中的冒险注入鲜活的生命力。他们希望能够在前面的某个地方找到努努的母亲。如果他们能拯救她，或许他们就真的是英雄了。',
+        useList: [
+          '吞噬可以让努努呆在线上对抗敌方远程英雄。',
+          '如果有对手即将跑出射程，你可以选择早点打断绝对零度造成部分伤害。',
+          '延迟施放绝对零度直到对手使用完首轮限制，通常是有益的。尽量在冲入团战之前再等待一下。'
+        ],
+        enemyUseList: [
+          '打断绝对零度技能的引导会减低你队伍所受到的伤害。',
+          '使用召唤师技能闪现，将确保你逃离绝对零度技能。',
+          '【史上最大雪球！】移动得非常快但无法快速转向，因此尽量不要沿直线逃跑，而是要进行突然、大角度的转向。'
+        ]);
+    return hero;
+  }
+
+  /// 祖安怒兽 沃里克
+  static Hero Warwick() {
+    Skin skin01 = Skin(
+      skinName: '祖安怒兽 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '暗影 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '披着海牛的狼 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '狼外婆 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '冻原猎手 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '嗜血狂暴 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '火牙狼人 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '荒野豺狼 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '黑暗骑士 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '海牛狼人 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '南天之怒 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19010.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '原计划：末日 沃里克',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19016.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small19016.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '血之饥渴',
+        skillDetail:
+            '沃里克的普攻造成额外魔法伤害。如果沃里克的生命值低于50%，那么他会获得等额的治疗效果。如果他的生命值低于25%，则治疗效果提升至三倍。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/WarwickP.png');
+    var Q = SkillInfo(
+        skillName: '野兽之口',
+        skillDetail: '沃里克向前猛扑并撕咬他的目标，造成基于目标最大生命值的伤害，并造成基于实际伤害值的治疗效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/WarwickQ.png');
+    var W = SkillInfo(
+        skillName: '鲜血追猎',
+        skillDetail:
+            '沃里克感知生命值在50%以下的敌人，在朝着这些敌人移动时会获得移动速度加成，并在攻击这些敌人时会获得攻速加成。当这些敌人的生命值在20%以下时，他会狂暴并让这些加成提升至三倍。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/WarwickW.png');
+    var E = SkillInfo(
+        skillName: '远祖嗥叫',
+        skillDetail:
+            '沃里克获得持续2.5秒的伤害减免效果。在效果结束时，或者重新激活技能时，沃里克会嗥叫，使附近的敌人因恐惧而逃跑1秒。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/WarwickE.png');
+    var R = SkillInfo(
+        skillName: '无尽束缚',
+        skillDetail: '沃里克朝一个方向跳跃（跳跃距离可从他的移动速度加成中获益），将他所碰撞到的第一个敌方英雄压制1.5秒。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/WarwickR.png');
+
+    var hero = Hero(
+        id: 20200819,
+        firstName: '祖安怒兽',
+        secondName: '沃里克',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small19000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big19000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12
+        ],
+        labelList: ['战士', '坦克', '打野'],
+        strength: Strength(
+            physicsAttr: 9, magicAttr: 3, defenseAttr: 5, operateAttr: 3),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '沃里克是一头游猎于祖安灰色小巷的怪兽。他的身体接受了痛苦的实验并发生了变异，融合了精密复杂的储液舱和药泵，向他的血管中注入炼金合成的愤怒激素。他从阴影中一跃而出，猎杀那些在城市最深处肆虐的罪犯。沃里克会被鲜血吸引，血腥味让他失去理智。没有哪个沾血的人能够逃过他的猎杀。',
+        useList: [
+          '跟随你的【W鲜血追猎】的血迹就能找到那些生命值较低的敌方英雄。',
+          '沃里克的终极技能的施放距离可以从任何移动速度加成中获益，包括友方的增益效果和召唤师技能。',
+          '【Q野兽之口】会跟随敌人。在你按住这个技能键时，即使敌人用了奔跑、突进或传送技能，沃里克也会跟随他们出现在相应位置。'
+        ],
+        enemyUseList: [
+          '沃里克普攻会在他生命值较低时治疗他。把你的控制技能留到他残血时用，不要给他反击的机会。',
+          '沃里克在对抗生命值较低的敌人时会获得强化。维持好你的生命值，别让他有可乘之机。',
+          '沃里克终极技能的施放距离可从他的移动速度加成中获益。'
+        ]);
+    return hero;
+  }
 
   /// 麦林炮手 崔丝塔娜
   static Hero Tristana() {
     Skin skin01 = Skin(
       skinName: '麦林炮手 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18000.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18000.jpg',
     );
     Skin skin02 = Skin(
       skinName: '粉色萝莉 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18001.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18001.jpg',
     );
     Skin skin03 = Skin(
       skinName: '圣诞精灵 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18002.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18002.jpg',
     );
     Skin skin04 = Skin(
       skinName: '烈焰雄心 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18003.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18003.jpg',
     );
     Skin skin05 = Skin(
       skinName: '游击队员 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18004.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18004.jpg',
     );
     Skin skin06 = Skin(
       skinName: '约德尔海贼团 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18005.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18005.jpg',
     );
     Skin skin07 = Skin(
       skinName: '火箭达人 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18006.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18006.jpg',
     );
     Skin skin08 = Skin(
       skinName: '驯龙炮手 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18010.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18010.jpg',
     );
     Skin skin09 = Skin(
       skinName: '魅惑女巫 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18011.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18011.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18011.jpg',
     );
     Skin skin10 = Skin(
       skinName: '欧米伽小队 魔鬼伞兵',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18012.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18012.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18012.jpg',
     );
     Skin skin11 = Skin(
       skinName: '小恶魔 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18024.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18024.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18024.jpg',
     );
     Skin skin12 = Skin(
       skinName: '我，羽饰骑士 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18033.jpg',
-      skinSmallImg: 'https://game.gtimg.cn/images/lol/act/img/skin/small18033.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small18033.jpg',
     );
 
-    var P = SkillInfo(skillName: '瞄准', skillDetail: '崔丝塔娜的射程随等级提升。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/passive/Tristana_Passive.png');
-    var Q = SkillInfo(skillName: '急速射击', skillDetail: '崔丝塔娜急速射击，短时间内提升攻击速度。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaQ.png');
-    var W = SkillInfo(skillName: '火箭跳跃', skillDetail: '崔丝塔娜朝地面开火，跳跃至目标区域，落地造成伤害并减速附近敌人一小段时间。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaW.png');
-    var E = SkillInfo(skillName: '爆炸火花', skillDetail: '当崔丝塔娜杀死一个单位，加农炮弹会炸裂伤害周围的敌人。可通过主动施放这个技能来将一颗炸弹放置在目标身上，炸弹会在短时间内或被崔丝塔娜攻击数次后爆炸，爆炸时对目标及其附近的敌人造成伤害。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaE.png');
-    var R = SkillInfo(skillName: '毁灭射击', skillDetail: '丝塔娜装填巨型加农炮弹攻击目标单位，造成巨大伤害并击退目标。如果目标携带着【爆炸火花】的炸弹，那么该炸弹的爆炸半径翻倍。', skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/TristanaR.png');
+    var P = SkillInfo(
+        skillName: '瞄准',
+        skillDetail: '崔丝塔娜的射程随等级提升。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Tristana_Passive.png');
+    var Q = SkillInfo(
+        skillName: '急速射击',
+        skillDetail: '崔丝塔娜急速射击，短时间内提升攻击速度。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TristanaQ.png');
+    var W = SkillInfo(
+        skillName: '火箭跳跃',
+        skillDetail: '崔丝塔娜朝地面开火，跳跃至目标区域，落地造成伤害并减速附近敌人一小段时间。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TristanaW.png');
+    var E = SkillInfo(
+        skillName: '爆炸火花',
+        skillDetail:
+            '当崔丝塔娜杀死一个单位，加农炮弹会炸裂伤害周围的敌人。可通过主动施放这个技能来将一颗炸弹放置在目标身上，炸弹会在短时间内或被崔丝塔娜攻击数次后爆炸，爆炸时对目标及其附近的敌人造成伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TristanaE.png');
+    var R = SkillInfo(
+        skillName: '毁灭射击',
+        skillDetail:
+            '丝塔娜装填巨型加农炮弹攻击目标单位，造成巨大伤害并击退目标。如果目标携带着【爆炸火花】的炸弹，那么该炸弹的爆炸半径翻倍。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TristanaR.png');
 
     var hero = Hero(
         id: 20200818,
@@ -77,17 +368,35 @@ class HeroData {
         secondName: '崔丝塔娜',
         avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small18000.jpg',
         bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big18000.jpg',
-        skinList: [skin01, skin02,skin03,skin04,skin05,skin06,skin07,skin08,skin09,skin10,skin11,skin12],
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12
+        ],
         labelList: [''],
         strength: Strength(
             physicsAttr: 0, magicAttr: 0, defenseAttr: 0, operateAttr: 0),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
-        backStory: '许多约德尔人都将自己的精力花在探索发现、发明创造或者搞恶作剧上，然而崔丝塔娜则一心向往伟大勇者们的冒险故事。她听闻了太多关于符文之地的事，关于不同的势力、关于庞大的战争。崔丝塔娜相信自己也有资格成为传奇。她首次踏进了这个世界，拿着她信赖的加农炮“轰隆”，用坚定的勇气和乐观精神跳进战场。',
-        useList: ['崔丝塔娜的巨枪可以让它远距离攻击目标。利用这个可以防止你的敌人靠近你。',
-    '在你对一个敌人叠满【爆炸火花】的层数后，再用【火箭跳跃】跳到这个敌人身上，就能对这个敌人造成爆发性的伤害。',
-    '你可以用【急速射击】来帮你尽快在敌方英雄身上叠满【爆炸火花】。'],
-        enemyUseList: ['如果你看见崔丝塔娜在交战中激活急速射击，那么晕眩她，并且后退，直到该技能消散。',
-    '对线时远离你的小兵，减少爆炸射击所带来的附带伤害。']);
+        backStory:
+            '许多约德尔人都将自己的精力花在探索发现、发明创造或者搞恶作剧上，然而崔丝塔娜则一心向往伟大勇者们的冒险故事。她听闻了太多关于符文之地的事，关于不同的势力、关于庞大的战争。崔丝塔娜相信自己也有资格成为传奇。她首次踏进了这个世界，拿着她信赖的加农炮“轰隆”，用坚定的勇气和乐观精神跳进战场。',
+        useList: [
+          '崔丝塔娜的巨枪可以让它远距离攻击目标。利用这个可以防止你的敌人靠近你。',
+          '在你对一个敌人叠满【爆炸火花】的层数后，再用【火箭跳跃】跳到这个敌人身上，就能对这个敌人造成爆发性的伤害。',
+          '你可以用【急速射击】来帮你尽快在敌方英雄身上叠满【爆炸火花】。'
+        ],
+        enemyUseList: [
+          '如果你看见崔丝塔娜在交战中激活急速射击，那么晕眩她，并且后退，直到该技能消散。',
+          '对线时远离你的小兵，减少爆炸射击所带来的附带伤害。'
+        ]);
     return hero;
   }
 
@@ -222,7 +531,7 @@ class HeroData {
           skin12,
           skin13
         ],
-        labelList: ['射手','刺客','上单'],
+        labelList: ['射手', '刺客', '上单'],
         strength: Strength(
             physicsAttr: 5, magicAttr: 7, defenseAttr: 3, operateAttr: 4),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
