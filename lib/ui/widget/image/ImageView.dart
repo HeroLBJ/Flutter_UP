@@ -39,6 +39,7 @@ class ImageView extends StatelessWidget {
 
     // 图片
     var image = CachedNetworkImage(
+      width: width,height: height,
         imageUrl: imageUrl, errorWidget: (context, url, error) => errorWidget);
 
     return Material(

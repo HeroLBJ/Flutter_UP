@@ -6,28 +6,28 @@ import 'package:flutter_up/tool/hero/HeroData.dart';
 class HeroTool {
   /// 获取所有英雄列表
   static List<Hero> getHeroList() {
-    var heroList = List<Hero>();
-    heroList.add(HeroData.Annie()); // 001
-    heroList.add(HeroData.Olaf()); // 002
-    heroList.add(HeroData.Galio()); // 003
-    heroList.add(HeroData.Twist()); // 004
-    heroList.add(HeroData.ZhaoXin()); // 005
-    heroList.add(HeroData.Urgot()); // 006
-    heroList.add(HeroData.Leblanc()); // 007
-    heroList.add(HeroData.Vladimir()); // 008
-    heroList.add(HeroData.Fiddlesticks()); // 009
-    heroList.add(HeroData.Kayle()); // 010
-    heroList.add(HeroData.Masteryi()); // 011
-    heroList.add(HeroData.Alistar()); // 012
-    heroList.add(HeroData.Ryze()); // 013
-    heroList.add(HeroData.Sion()); // 014
-    heroList.add(HeroData.Sivir()); // 015
-    heroList.add(HeroData.Soraka()); // 016
-    heroList.add(HeroData.Teemo()); // 017
-    heroList.add(HeroData.Tristana()); // 018
-    heroList.add(HeroData.Warwick()); // 019
-    heroList.add(HeroData.Nunu()); // 020
-    return heroList;
+    return [
+      HeroData.Annie(), // 001
+      HeroData.Olaf(), //002
+      HeroData.Galio(), // 003
+      HeroData.Twist(), // 004
+      HeroData.ZhaoXin(), // 005
+      HeroData.Urgot(), // 006
+      HeroData.Leblanc(), // 007
+      HeroData.Vladimir(), // 008
+      HeroData.Fiddlesticks(), // 009
+      HeroData.Kayle(), // 010
+      HeroData.Masteryi(), // 011
+      HeroData.Alistar(), // 012
+      HeroData.Ryze(), // 013
+      HeroData.Sion(), // 014
+      HeroData.Sivir(), // 015
+      HeroData.Soraka(), // 016
+      HeroData.Teemo(), // 017
+      HeroData.Tristana(), // 018
+      HeroData.Warwick(), // 019
+      HeroData.Nunu(), // 020
+    ];
   }
 
   /// 获取随机一个英雄
