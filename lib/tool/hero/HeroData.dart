@@ -1,6 +1,168 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 赏金猎人 厄运小姐
+  Hero getHero() {
+    Skin skin01 = Skin(
+      skinName: '赏金猎人 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '西部牛仔 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '法国皇室 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '特工狂花 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '圣诞糖果棒 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '荒野女警 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '黑帮狂花 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '电玩女神 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '女帝 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '泳池派对 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '星之守护者 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21015.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21015.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '武装战姬 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21016.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21016.jpg',
+    );
+    Skin skin13 = Skin(
+      skinName: '睡衣守护者 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21017.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21017.jpg',
+    );
+    Skin skin14 = Skin(
+      skinName: '魅惑女巫 厄运小姐',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21018.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21018.jpg',
+    );
+    Skin skin15 = Skin(
+      skinName: '魅惑女巫 厄运小姐 至臻',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21020.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small21020.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '厄运的眷顾',
+        skillDetail: '在对一个新目标进行普攻时，厄运小姐会造成额外物理伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/MissFortune_W.png');
+    var Q = SkillInfo(
+        skillName: '一箭双雕',
+        skillDetail: '厄运小姐向敌人发射子弹，伤害他们以及他们后面的目标。两次攻击都可以施加【厄运的眷顾】。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MissFortuneRicochetShot.png');
+    var W = SkillInfo(
+        skillName: '大步流星',
+        skillDetail:
+            '厄运小姐在不被攻击时会被动获得移动速度加成。可以主动施放这个技能来获得短时间的攻击速度加成。在【大步流星】尚未冷却完毕时，【厄运的眷顾】可减少【大步流星】的剩余持续时间。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MissFortuneViciousStrikes.png');
+    var E = SkillInfo(
+        skillName: '枪林弹雨',
+        skillDetail: '厄运小姐发射一阵弹雨来获得目标区域的视野，对敌人造成几波伤害，并减缓他们的移动速度。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MissFortuneScattershot.png');
+    var R = SkillInfo(
+        skillName: '弹幕时间',
+        skillDetail: '厄运小姐向她面前的锥形范围内引导一阵子弹风暴，对敌人造成大量伤害。这个技能的每波子弹都可以暴击。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MissFortuneBulletTime.png');
+
+    var hero = Hero(
+        id: 20200821,
+        firstName: '赏金猎人',
+        secondName: '厄运小姐',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
+        bigAvatar:
+            'https://game.gtimg.cn/images/lol/act/img/skin/small21000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12,
+          skin13,
+          skin14,
+          skin15
+        ],
+        labelList: ['射手','ADC'],
+        strength: Strength(
+            physicsAttr: 8, magicAttr: 5, defenseAttr: 2, operateAttr: 3),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '以美貌闻名，但却以无情立命的莎拉是一位比尔吉沃特的船长，她在这座港镇的强硬犯罪集团中塑造了不容轻视的形象。在她还是个孩子的时候，亲眼目睹了海盗之王普朗克谋杀了自己的家人。多年以后她残忍地报仇雪恨，把他和他的旗舰连人带船一同炸飞。所有低估她的人都会发现，自己面对的是一个极具欺骗性的狡黠对手，还有可能要处理肚子里的一两颗子弹。',
+        useList: [
+          '厄运小姐如果近期没有受到伤害，就会提高速度。避免受到攻击可以让她移动非常迅速。',
+          '如果敌方英雄躲在小兵背后，则对最远处的敌方小兵使用一箭双雕；它会弹射到敌方英雄身上造成大量伤害。',
+          '在【大步流星】尚未冷却时，要尽量利用【厄运的眷顾】来最大化攻击速度加成的持续时间。'
+        ],
+        enemyUseList: [
+          '厄运小姐的加速会被我方的伤害移除。',
+          '如果你能追上厄运小姐，她很容易被击杀。在团队作战中先锁定她为目标。'
+        ]);
+    return hero;
+  }
+
   /// 雪原双子 努努和威朗普
   static Hero Nunu() {
     Skin skin01 = Skin(
@@ -99,7 +261,7 @@ class HeroData {
         ],
         labelList: ['辅助', '战士', '打野'],
         strength: Strength(
-            physicsAttr: 0, magicAttr: 0, defenseAttr: 0, operateAttr: 0),
+            physicsAttr: 4, magicAttr: 7, defenseAttr: 6, operateAttr: 4),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
         backStory:
             '很久以前，曾有个小男孩，他要证明自己是个英雄，于是决定去杀掉一头凶猛的怪兽——但他却发现这个怪兽其实是个孤独的魔法雪人，而且他需要的只是一个朋友。雪人和男孩被古老的力量所连结，也因对雪球的共同爱好而玩到一起。努努和威朗普如今在弗雷尔卓德的土地上肆意撒欢打滚，为想象中的冒险注入鲜活的生命力。他们希望能够在前面的某个地方找到努努的母亲。如果他们能拯救她，或许他们就真的是英雄了。',
