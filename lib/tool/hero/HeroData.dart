@@ -2,7 +2,7 @@ import 'Hero.dart';
 
 class HeroData {
   /// 赏金猎人 厄运小姐
-  Hero getHero() {
+  static Hero MissFortune() {
     Skin skin01 = Skin(
       skinName: '赏金猎人 厄运小姐',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
@@ -710,7 +710,7 @@ class HeroData {
     return hero;
   }
 
-  // 众星之子 索拉卡
+  /// 众星之子 索拉卡
   static Hero Soraka() {
     Skin skin01 = Skin(
       skinName: '众星之子 索拉卡',

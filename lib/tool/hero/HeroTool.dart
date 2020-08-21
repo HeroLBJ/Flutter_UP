@@ -27,6 +27,7 @@ class HeroTool {
       HeroData.Tristana(), // 018
       HeroData.Warwick(), // 019
       HeroData.Nunu(), // 020
+      HeroData.MissFortune(), // 021
     ];
   }
 
