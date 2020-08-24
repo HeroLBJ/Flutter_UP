@@ -1,6 +1,279 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 蛮族之王 泰达米尔
+  static Hero Tryndamere() {
+    Skin skin01 = Skin(
+      skinName: '蛮族之王 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '勇敢的心 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '国王 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '诸神的黄昏 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '恶魔之刃 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '奥斯曼大帝 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '关羽 云长',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '梦魇 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '野兽猎人 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '生化领主 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '腥红之月 泰达米尔',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small23010.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '战斗狂怒',
+        skillDetail: '泰达米尔每次攻击、暴击或击杀都能获得怒气。怒气被动地增加他的暴击几率，且可以通过释放嗜血杀戮来消耗。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Tryndamere_Passive.png');
+    var Q = SkillInfo(
+        skillName: '嗜血杀戮',
+        skillDetail: '泰达米尔对战斗极度饥渴，他受伤程度越高，攻击力越强。他能通过释放【Q嗜血杀戮】消耗怒气并治疗自己。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TryndamereQ.png');
+    var W = SkillInfo(
+        skillName: '蔑视',
+        skillDetail: '泰达米尔嘲笑敌人，减少身边敌方英雄的攻击力。背对泰达米尔的敌人还会被减速。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TryndamereW.png');
+    var E = SkillInfo(
+        skillName: '旋风斩',
+        skillDetail: '泰达米尔挥舞大剑冲向目标，对冲锋路线上所有敌人造成伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TryndamereE.png');
+    var R = SkillInfo(
+        skillName: '无尽怒火',
+        skillDetail: '泰达米尔是如此渴望战斗，以至于承受再多的伤害也不会死亡。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/UndyingRage.png');
+
+    var hero = Hero(
+        id: 20200823,
+        firstName: '蛮族之王',
+        secondName: '泰达米尔',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small23000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big23000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11
+        ],
+        labelList: ['战士', '刺客', '上单'],
+        strength: Strength(
+            physicsAttr: 10, magicAttr: 2, defenseAttr: 5, operateAttr: 6),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '桀骜不羁和无尽的愤怒驱使着泰达米尔在弗雷尔卓德所向披靡。他曾公开挑战北方最伟大的战士，让自己为未来更黑暗的时代做好准备。这位愤怒的野蛮人一直都在为自己被灭绝的氏族寻求复仇，不过最近他与阿瓦洛萨部族的战母艾希联手，并在她的族群中重新安家。他非人的力量与毅力是众人皆知的传奇，而且也为他和他的新盟友带来了无数次奇迹般的胜利。',
+        useList: [
+          '推迟激活无尽怒火是促使敌方英雄过度激进地想来杀死你的有效方式。',
+          '嗜血杀戮是治疗泰达米尔的有效方式，试着在增益消失之前激活它。',
+          '如果敌人叠加护甲，可购买最后的轻语或者幽梦之灵。'
+        ],
+        enemyUseList: [
+          '尽早的骚扰泰达米尔，使其无法击杀小兵、无法通过嗜血杀戮技能回复生命值。',
+          '切记：只有在背对泰达米尔的前提下，他才能够减缓你的速度。',
+          '泰达米尔造成的大多是物理伤害。如果他变得过于强大，可以考虑购买荆棘之甲。'
+        ]);
+    return hero;
+  }
+
+  /// 寒冰射手 艾希
+  static Hero Ashe() {
+    Skin skin01 = Skin(
+      skinName: '寒冰射手 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '极地女神 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '丛林侠盗 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '勇敢的心 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '女皇 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '紫晶射手 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '觅心女王 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '黑暗骑士 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '源计划：联合 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '冠军之箭 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22009.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '御星魔矢 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22011.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22011.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '西部天使 艾希',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22017.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small22017.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '冰霜射击',
+        skillDetail:
+            '艾希的攻击会让目标减速，并使艾希对这些目标造成更高伤害。艾希的暴击不会造成额外伤害，但会对目标施加一个强化版减速效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Ashe_P.png');
+    var Q = SkillInfo(
+        skillName: '射手的专注',
+        skillDetail:
+            '艾希会在攻击时聚集【全神贯注】效果。在【全神贯注】到达最大值时，艾希就能施放【射手的专注】来消耗掉所有【全神贯注】效果，以临时提升她的攻击速度，并在持续期间将她的普攻转变为一阵强力的飓风箭阵。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/AsheQ.png');
+    var W = SkillInfo(
+        skillName: '万箭齐发',
+        skillDetail: '艾希向前方的锥形范围射出9支箭，对敌人造成额外伤害。该技能也会触发冰霜射击的效果。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/Volley.png');
+    var E = SkillInfo(
+        skillName: '鹰击长空',
+        skillDetail: '艾希将她的猎鹰之灵派去执行侦查任务，可派往地图上的任意地点。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/AsheSpiritOfTheHawk.png');
+    var R = SkillInfo(
+        skillName: '魔法水晶箭',
+        skillDetail:
+            '艾希射出一支沿直线飞行的魔法水晶箭。如果水晶箭命中了一名敌方英雄，那么它会对该英雄造成伤害和晕眩效果，晕眩时长取决于水晶箭的飞行距离。此外，该英雄附近的敌方单位会受到伤害和减速效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/EnchantedCrystalArrow.png');
+
+    var hero = Hero(
+        id: 20200822,
+        firstName: '寒冰射手',
+        secondName: '艾希',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small22000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big22000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12
+        ],
+        labelList: ['射手', '辅助', 'ADC'],
+        strength: Strength(
+            physicsAttr: 7, magicAttr: 2, defenseAttr: 3, operateAttr: 4),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '作为阿瓦罗萨部族的战母，寒冰血脉的艾希率领着北方人数最多的部落。她克己、智慧、忠于理想，但并不适应自己作为领袖的角色，艾希与自己血脉中蕴藏的先祖魔法相通，挽起了臻冰打造的长弓。她的族人相信她就是神话中的女英雄阿瓦罗萨的转世，在人们的追随下，艾希希望夺回那些属于部族的古代领土，从而让弗雷尔卓德再次实现统一。',
+        useList: [
+          '尽量预判敌人行进的方向发射魔法水晶箭 ，这样可以加大射击命中率。',
+          '万箭齐发的箭矢会被命中的第一个敌人所阻挡，因此请注意拉开距离，以防所有箭矢都被敌方的前排英雄所吸收。',
+          '鹰击长空能侦查野区中的目标，这让你在野区中作战很有优势。'
+        ],
+        enemyUseList: [
+          '艾希几乎没有防御技能，因此是优先的gank目标。',
+          '如果艾希有段时间没有施放她的【魔法水晶箭】，那么你在地图上移动时就要特别小心。'
+        ]);
+    return hero;
+  }
+
   /// 赏金猎人 厄运小姐
   static Hero MissFortune() {
     Skin skin01 = Skin(
@@ -145,7 +418,7 @@ class HeroData {
           skin14,
           skin15
         ],
-        labelList: ['射手','ADC'],
+        labelList: ['射手', 'ADC'],
         strength: Strength(
             physicsAttr: 8, magicAttr: 5, defenseAttr: 2, operateAttr: 3),
         skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
