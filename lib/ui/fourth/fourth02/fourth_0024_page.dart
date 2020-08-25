@@ -3,12 +3,12 @@ import 'package:flutter_up/tool/AppBarTool.dart';
 import 'package:flutter_up/tool/hero/HeroTool.dart';
 import 'package:flutter_up/ui/widget/image/ImageView.dart';
 
-class Fourth004Page extends StatefulWidget {
+class Fourth0024Page extends StatefulWidget {
   @override
-  _Fourth004PageState createState() => _Fourth004PageState();
+  _Fourth0024PageState createState() => _Fourth0024PageState();
 }
 
-class _Fourth004PageState extends State<Fourth004Page> {
+class _Fourth0024PageState extends State<Fourth0024Page> {
   @override
   Widget build(BuildContext context) {
     var heroSkin = HeroTool.getHeroSkin();
