@@ -22,7 +22,7 @@ class FourthMainPage extends StatelessWidget {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => Fourth002Page()));
           }),
-          contentChild('每周一组件', () {
+          contentChild('小部件', () {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => Fourth003Page()));
           })

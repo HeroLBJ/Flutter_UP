@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/AppBarTool.dart';
 import 'package:flutter_up/tool/ColorTool.dart';
 import 'package:flutter_up/tool/toast/ToastTool.dart';
+import 'package:flutter_up/ui/fourth/fourth003/SafeAreaPage.dart';
 
 class Fourth003Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarTool.getAppBar(context, '每周一组件'),
+      appBar: AppBarTool.getAppBar(context, '小部件'),
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.all(10),
@@ -15,7 +16,7 @@ class Fourth003Page extends StatelessWidget {
             spacing: 10,
             runSpacing: 10,
             children: <Widget>[
-              _wrapChild('SafeArea', () => ToastTool.showText('敬请期待')),
+              _wrapChild('SafeArea', () => _startPage(context, SafeAreaPage())),
               _wrapChild('Expanded', () => ToastTool.showText('敬请期待')),
               _wrapChild('Wrap', () => ToastTool.showText('敬请期待')),
               _wrapChild('AnimatedContainer', () => ToastTool.showText('敬请期待')),
@@ -132,5 +133,10 @@ class Fourth003Page extends StatelessWidget {
     );
     return InkWell(
         borderRadius: BorderRadius.circular(15), onTap: onTap, child: child);
+  }
+
+  _startPage(BuildContext context, Widget page) {
+    return Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => page));
   }
 }
