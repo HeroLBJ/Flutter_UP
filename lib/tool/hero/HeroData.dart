@@ -241,9 +241,9 @@ class HeroData {
         id: 20200824,
         firstName: '武器大师',
         secondName: '贾克斯',
-        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big24000.jpg',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small24000.jpg',
         bigAvatar:
-            'https://game.gtimg.cn/images/lol/act/img/skin/small24000.jpg',
+            'https://game.gtimg.cn/images/lol/act/img/skin/big24000.jpg',
         skinList: [
           skin01,
           skin02,
@@ -672,9 +672,9 @@ class HeroData {
         id: 20200821,
         firstName: '赏金猎人',
         secondName: '厄运小姐',
-        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small21000.jpg',
         bigAvatar:
-            'https://game.gtimg.cn/images/lol/act/img/skin/small21000.jpg',
+            'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
         skinList: [
           skin01,
           skin02,
@@ -734,7 +734,7 @@ class HeroData {
       skinName: '脏兮兮 努努和威朗普',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20003.jpg',
       skinSmallImg:
-          'https://game.gtimg.cn/images/lol/act/img/skin/big20003.jpg',
+          'https://game.gtimg.cn/images/lol/act/img/skin/small20003.jpg',
     );
     Skin skin05 = Skin(
       skinName: '合金巨兽 努努和威朗普',

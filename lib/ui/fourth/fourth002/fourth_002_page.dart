@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/AppBarTool.dart';
 import 'package:flutter_up/tool/WidgetTool.dart';
-import 'package:flutter_up/ui/fourth/fourth02/fourth_0021_page.dart';
 
+import 'fourth_0021_page.dart';
 import 'fourth_0022_page.dart';
 import 'fourth_0023_page.dart';
 import 'fourth_0024_page.dart';
