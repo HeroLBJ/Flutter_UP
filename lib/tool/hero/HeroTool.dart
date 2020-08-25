@@ -30,6 +30,8 @@ class HeroTool {
       HeroData.MissFortune(), // 021
       HeroData.Ashe(), // 022
       HeroData.Tryndamere(), // 023
+      HeroData.JaxCounterStrike(), // 024
+      HeroData.Morgana(), // 025
     ];
   }
 

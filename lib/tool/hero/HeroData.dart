@@ -1,6 +1,280 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 堕落天使 莫甘娜
+  static Hero Morgana() {
+    Skin skin01 = Skin(
+      skinName: '堕落天使 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '杀戮天使昔拉 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '地狱厨房 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '刀锋女王 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '黑色荆棘 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '鬼魂新娘 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '胜利女神 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '紫金罗刹 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25010.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25010.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '魅惑女巫 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25011.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25011.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '玉剑传说 苍鸾',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25017.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25017.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '至尊魔女 莫甘娜',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25026.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small25026.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '灵魂吸取',
+        skillDetail: '莫甘娜从她的敌人身上吸取灵魂，在对英雄、大型小兵和大型野怪造成技能伤害时获得治疗效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/FallenAngel_Empathize.png');
+    var Q = SkillInfo(
+        skillName: '暗之禁锢',
+        skillDetail: '莫甘娜用黑暗魔法将一名敌人禁锢在原地，迫使其感受自己造成的痛苦并对其造成魔法伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MorganaQ.png');
+    var W = SkillInfo(
+        skillName: '折磨之影',
+        skillDetail:
+            '莫甘娜在一个区域施放一团诅咒之影，对胆敢站在她黑色环形之中的敌人造成伤害。敌人会持续受到魔法伤害，并且生命值越低受到伤害越高。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MorganaW.png');
+    var E = SkillInfo(
+        skillName: '黑暗之盾',
+        skillDetail: '莫甘娜为一名友方英雄涂上一层保护性的星火屏障，在被打破之前吸收魔法伤害和限制效果。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MorganaE.png');
+    var R = SkillInfo(
+        skillName: '灵魂镣铐',
+        skillDetail:
+            '莫甘娜全力释放她的星界能量，与此同时，她的羽翼会解除束缚并且会悬浮在地面上。她将黑暗痛苦组成的锁链抽击到附近的敌方英雄身上，在朝向他们移动时获得移动速度。锁链会减速并造成初段伤害，并在一段延迟后，晕眩那些未能挣脱的敌方英雄。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MorganaR.png');
+
+    var hero = Hero(
+        id: 20200825,
+        firstName: '堕落天使',
+        secondName: '莫甘娜',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small25000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big25000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11
+        ],
+        labelList: ['法师', '辅助'],
+        strength: Strength(
+            physicsAttr: 1, magicAttr: 8, defenseAttr: 6, operateAttr: 1),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '在天界与凡间双重本性的夹缝中左右为难的莫甘娜，束缚了自己的双翼并拥抱了人性，还将自己的痛苦和怨恨施加给那些失信和堕落之人。她抗拒一切在她眼中不公正的法律和传统，并从德玛西亚的黑影中投出保护的盾牌和暗焰的锁链，在别人想要打压的暗处为真理而战。最重要的是，莫甘娜坚信，即使是被放逐、被遗弃的人，也可能有朝一日东山再起。',
+        useList: [
+          '精明地使用黑暗之盾可以决定团战的结果。',
+          '增强生存力的道具可以使莫甘娜在联合使用黑暗之盾与灵魂镣铐时变得极难杀死。',
+          '如果兵线上只有你自己，那么痛苦腐蚀能有效地帮助你打钱。'
+        ],
+        enemyUseList: [
+          'W折磨之影】会对失去大量生命值的敌人造成成吨的伤害。在血量较低时，要留心莫甘娜把你诱骗到它范围内的企图。',
+          '莫甘娜经常需要使用【Q暗之禁锢】来发起其他进攻，把小兵当护盾，从而躲避【Q暗之禁锢】。 【E黑暗之盾】让莫甘娜免疫限制效果，但这个护盾可以被魔法伤害给灌爆。'
+        ]);
+    return hero;
+  }
+
+  /// 武器大师 贾克斯
+  static Hero JaxCounterStrike() {
+    Skin skin01 = Skin(
+      skinName: '武器大师 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '冰球队员 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '万夫莫开 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '宗师级钓鱼训练师 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '卧虎藏龙 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '百夫长 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '少林武僧 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: '复仇武神 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: 'SKT T1 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '光明骑士 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24012.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24012.jpg',
+    );
+    Skin skin11 = Skin(
+      skinName: '武神 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24013.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24013.jpg',
+    );
+    Skin skin12 = Skin(
+      skinName: '王国机神白虎 贾克斯',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24014.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small24014.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '无情连打',
+        skillDetail: '贾克斯连续的普通攻击，会持续地提高他的攻击速度。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Armsmaster_MasterOfArms.png');
+    var Q = SkillInfo(
+        skillName: '跳斩',
+        skillDetail: '贾克斯跳向一个单位。如果目标是敌人，贾克斯会用他的武器狠狠地抽打敌人的脸，造成额外伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/JaxLeapStrike.png');
+    var W = SkillInfo(
+        skillName: '蓄力一击',
+        skillDetail: '贾克斯为武器充能，使他的下次攻击能造成额外伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/JaxEmpowerTwo.png');
+    var E = SkillInfo(
+        skillName: '反击风暴',
+        skillDetail: '贾克斯的武艺让他能够在短时间里躲闪掉所有即将到来的普通攻击，随后对所有周围的敌人快速发起反击，并将他们击晕。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/JaxCounterStrike.png');
+    var R = SkillInfo(
+        skillName: '宗师之威',
+        skillDetail:
+            '每连续攻击2次，第3次攻击就会造成额外的魔法伤害。另外，贾克斯可以激活这个技能来施放他的内力，暂时性地提升他的护甲和魔法抗性。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/JaxRelentlessAssault.png');
+
+    var hero = Hero(
+        id: 20200824,
+        firstName: '武器大师',
+        secondName: '贾克斯',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big24000.jpg',
+        bigAvatar:
+            'https://game.gtimg.cn/images/lol/act/img/skin/small24000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10,
+          skin11,
+          skin12
+        ],
+        labelList: ['战士', "刺客", "上单"],
+        strength: Strength(
+            physicsAttr: 7, magicAttr: 7, defenseAttr: 5, operateAttr: 6),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '无论是各种兵器的技法，还是刻薄的挖苦嘲讽，贾克斯都无人能及，他是目前已知的最后一名艾卡西亚武器大师。曾经，故乡的人们狂妄自大地引来了虚空，结果导致家园被夷为平地。在那之后，贾克斯和他的同胞发誓要保护仅存的一切。如今，世界上的魔法再次涌起，沉睡的威胁也再次被触动。于是贾克斯开始在瓦洛兰漫游，手握艾卡西亚的最后光明，考验他遇到的每一名战士，寻找可与自己分庭抗礼的强者，并肩作战。',
+        useList: [
+          '贾克斯的跳斩能对友军施放，包括侦查守卫，你可以利用这个逃离敌人的追杀。',
+          '诸如鬼索的狂暴之刃和海克斯科技枪刃等物法双加成的装备，都对贾克斯大有裨益。'
+        ],
+        enemyUseList: [
+          '通过短时间爆发来伤害贾克斯，而不要跟他过于靠近。不让他连续攻击，就能极大降低他所造成的伤害。',
+          '贾克斯可以在短时间内躲闪掉所有即将到来的普通攻击，并在结束后晕眩周围的敌军。请等到他的躲闪结束后再发起攻击。'
+        ]);
+    return hero;
+  }
+
   /// 蛮族之王 泰达米尔
   static Hero Tryndamere() {
     Skin skin01 = Skin(
