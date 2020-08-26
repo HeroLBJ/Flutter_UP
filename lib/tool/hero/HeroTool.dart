@@ -32,6 +32,7 @@ class HeroTool {
       HeroData.Tryndamere(), // 023
       HeroData.JaxCounterStrike(), // 024
       HeroData.Morgana(), // 025
+      HeroData.Zilean(), // 026
     ];
   }
 

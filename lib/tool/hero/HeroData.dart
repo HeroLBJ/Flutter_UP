@@ -1,6 +1,102 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 时光守护者 基兰
+  static Hero Zilean() {
+    Skin skin01 = Skin(
+      skinName: '时光守护者 基兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small26000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '圣诞狂欢 基兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small26001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '嘻哈精神 基兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small26002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '遗迹守护者 基兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small26003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '时间机器 基兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small26004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '腥红之月 基兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small26005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '糖果大战 基兰',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small26006.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '瓶中时光',
+        skillDetail:
+            '基兰将时光储存为经验值。\n当他拥有足够的经验值来使一名友方英雄升级时，他就能通过右键点击该友方英雄来使其升级。基兰自身也会获得等值的经验值。无法在战斗中使用。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Zilean_Passive.png');
+    var Q = SkillInfo(
+        skillName: '定时炸弹',
+        skillDetail:
+            '将一颗炸弹扔向目标区域，炸弹会附着在靠近它的单位身上（英雄优先）。炸弹会在3秒后爆炸，造成范围魔法伤害。如果炸弹被另一颗定时炸弹给提前引爆，那么还会使敌人晕眩。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/ZileanQ.png');
+    var W = SkillInfo(
+        skillName: '穿梭未来',
+        skillDetail: '基兰为未来的对抗做准备，减少他所有其它基础技能的冷却时间。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/ZileanW.png');
+    var E = SkillInfo(
+        skillName: '时光发条',
+        skillDetail: '基兰扭曲任意单位的时光，短时间内提升友方单位移动速度或减少敌方单位移动速度。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/TimeWarp.png');
+    var R = SkillInfo(
+        skillName: '时光倒流',
+        skillDetail: '基兰对友方英雄施放时光结界，若目标死亡，则时光倒流，救活目标。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/ChronoShift.png');
+
+    var hero = Hero(
+        id: 20200826,
+        firstName: '时光守护者',
+        secondName: '基兰',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small26000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big26000.jpg',
+        skinList: [skin01, skin02, skin03, skin04, skin05, skin06, skin07],
+        labelList: ['辅助', '法师'],
+        strength: Strength(
+            physicsAttr: 2, magicAttr: 8, defenseAttr: 5, operateAttr: 6),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '基兰曾是一位强大的艾卡西亚法师，在目睹了家园被虚空毁灭以后，他开始执迷于时间的流逝。他甚至没有时间为这场灾难感到悲哀，立刻就召唤了远古的时间魔法，预测全部的发展结局。从实际结果来说，他已成为不朽的存在。如今的基兰在过去、现在、未来之间漂泊，弯折、扭曲自己周围的时间，追寻那稍纵即逝的关键时刻，逆转时光，阻止艾卡西亚的毁灭。',
+        useList: [
+          '你可以连续使用【Q定时炸弹】和【W穿梭未来】来快速地将两颗定时炸弹放到一个目标上。放置第二颗炸弹会引爆第一颗，并晕眩附近的敌人。',
+          '【E时光发条】能让友军追杀敌人，或者从败仗逃脱。',
+          '【R时光倒流】能有效保护本方的主力输出英雄，但过早使用该技能会导致敌方转移攻击目标，降低效果。'
+        ],
+        enemyUseList: [
+          '如果你能跟上基兰的速度，你可以等到他的终极技能效果消逝之后，再发出夺命一击。',
+          '基兰很容易死在集火之下，但是很难被单杀。想杀他时，请你的队伍集中火力。'
+        ]);
+    return hero;
+  }
+
   /// 堕落天使 莫甘娜
   static Hero Morgana() {
     Skin skin01 = Skin(
@@ -242,8 +338,7 @@ class HeroData {
         firstName: '武器大师',
         secondName: '贾克斯',
         avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small24000.jpg',
-        bigAvatar:
-            'https://game.gtimg.cn/images/lol/act/img/skin/big24000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big24000.jpg',
         skinList: [
           skin01,
           skin02,
@@ -673,8 +768,7 @@ class HeroData {
         firstName: '赏金猎人',
         secondName: '厄运小姐',
         avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small21000.jpg',
-        bigAvatar:
-            'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
         skinList: [
           skin01,
           skin02,
