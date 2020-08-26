@@ -4,11 +4,8 @@ import 'package:flutter_up/ui/third/third001/third_001_page.dart';
 import 'package:flutter_up/ui/third/third002/third_002_page.dart';
 import 'package:flutter_up/ui/third/third003/third_003_page.dart';
 import 'package:flutter_up/ui/third/third004/third_004_page.dart';
-import 'package:flutter_up/ui/third/third005/third_005_page2.dart';
 import 'package:flutter_up/ui/third/third005/third_005_page3.dart';
 import 'package:flutter_up/ui/third/third006/third_006_1_page.dart';
-
-import 'third005/third_005_page.dart';
 
 class ThirdMainPage extends StatelessWidget {
   @override

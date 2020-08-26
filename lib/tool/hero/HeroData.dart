@@ -2,7 +2,7 @@ import 'Hero.dart';
 
 class HeroData {
   /// 时光守护者 基兰
-  static Hero Zilean() {
+  static Hero zilean() {
     Skin skin01 = Skin(
       skinName: '时光守护者 基兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big26000.jpg',
@@ -98,7 +98,7 @@ class HeroData {
   }
 
   /// 堕落天使 莫甘娜
-  static Hero Morgana() {
+  static Hero morgana() {
     Skin skin01 = Skin(
       skinName: '堕落天使 莫甘娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big25000.jpg',
@@ -232,7 +232,7 @@ class HeroData {
   }
 
   /// 武器大师 贾克斯
-  static Hero JaxCounterStrike() {
+  static Hero jaxcounterstrike() {
     Skin skin01 = Skin(
       skinName: '武器大师 贾克斯',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big24000.jpg',
@@ -371,7 +371,7 @@ class HeroData {
   }
 
   /// 蛮族之王 泰达米尔
-  static Hero Tryndamere() {
+  static Hero tryndamere() {
     Skin skin01 = Skin(
       skinName: '蛮族之王 泰达米尔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big23000.jpg',
@@ -504,7 +504,7 @@ class HeroData {
   }
 
   /// 寒冰射手 艾希
-  static Hero Ashe() {
+  static Hero ashe() {
     Skin skin01 = Skin(
       skinName: '寒冰射手 艾希',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big22000.jpg',
@@ -644,7 +644,7 @@ class HeroData {
   }
 
   /// 赏金猎人 厄运小姐
-  static Hero MissFortune() {
+  static Hero missfortune() {
     Skin skin01 = Skin(
       skinName: '赏金猎人 厄运小姐',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big21000.jpg',
@@ -805,7 +805,7 @@ class HeroData {
   }
 
   /// 雪原双子 努努和威朗普
-  static Hero Nunu() {
+  static Hero nunu() {
     Skin skin01 = Skin(
       skinName: '雪原双子 努努和威朗普',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big20000.jpg',
@@ -920,7 +920,7 @@ class HeroData {
   }
 
   /// 祖安怒兽 沃里克
-  static Hero Warwick() {
+  static Hero warwick() {
     Skin skin01 = Skin(
       skinName: '祖安怒兽 沃里克',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big19000.jpg',
@@ -1063,7 +1063,7 @@ class HeroData {
   }
 
   /// 麦林炮手 崔丝塔娜
-  static Hero Tristana() {
+  static Hero tristana() {
     Skin skin01 = Skin(
       skinName: '麦林炮手 崔丝塔娜',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big18000.jpg',
@@ -1204,7 +1204,7 @@ class HeroData {
   }
 
   /// 迅捷斥候 提莫
-  static Hero Teemo() {
+  static Hero teemo() {
     Skin skin01 = Skin(
       skinName: '迅捷斥候 提莫',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big17000.jpg',
@@ -1352,7 +1352,7 @@ class HeroData {
   }
 
   /// 众星之子 索拉卡
-  static Hero Soraka() {
+  static Hero soraka() {
     Skin skin01 = Skin(
       skinName: '众星之子 索拉卡',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big16000.jpg',
@@ -1489,7 +1489,7 @@ class HeroData {
   }
 
   /// 战争女神 希维尔
-  static Hero Sivir() {
+  static Hero sivir() {
     Skin skin01 = Skin(
       skinName: '战争女神 希维尔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big15000.jpg',
@@ -1626,7 +1626,7 @@ class HeroData {
   }
 
   /// 亡灵战神 塞恩
-  static Hero Sion() {
+  static Hero sion() {
     Skin skin01 = Skin(
       skinName: '亡灵战神 塞恩',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big14000.jpg',
@@ -1723,7 +1723,7 @@ class HeroData {
   }
 
   /// 符文法师 瑞兹
-  static Hero Ryze() {
+  static Hero ryze() {
     Skin skin01 = Skin(
       skinName: '符文法师 瑞兹',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big13000.jpg',
@@ -1870,7 +1870,7 @@ class HeroData {
   }
 
   /// 牛头酋长 阿利斯塔
-  static Hero Alistar() {
+  static Hero alistar() {
     Skin skin01 = Skin(
       skinName: '牛头酋长 阿利斯塔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big12000.jpg',
@@ -2026,7 +2026,7 @@ class HeroData {
   }
 
   /// 无极剑圣 易
-  static Hero Masteryi() {
+  static Hero masteryi() {
     Skin skin01 = Skin(
       skinName: '无极剑圣 易',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big11000.jpg',
@@ -2162,7 +2162,7 @@ class HeroData {
   }
 
   /// 正义天使 凯尔
-  static Hero Kayle() {
+  static Hero kayle() {
     Skin skin01 = Skin(
       skinName: '正义天使 凯尔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big10000.jpg',
@@ -2286,7 +2286,7 @@ class HeroData {
   }
 
   /// 远古恐惧 费德提克
-  static Hero Fiddlesticks() {
+  static Hero fiddlesticks() {
     Skin skin01 = Skin(
       skinName: '远古恐惧 费德提克',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big9000.jpg',
@@ -2405,7 +2405,7 @@ class HeroData {
   }
 
   /// 猩红收割者 费拉基米尔
-  static Hero Vladimir() {
+  static Hero vladimir() {
     Skin skin01 = Skin(
       skinName: '猩红收割者 费拉基米尔',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big8000.jpg',
@@ -2532,7 +2532,7 @@ class HeroData {
   }
 
   /// 诡术妖姬 乐芙兰
-  static Hero Leblanc() {
+  static Hero leblanc() {
     Skin skin01 = Skin(
       skinName: '诡术妖姬 乐芙兰',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big7000.jpg',
@@ -2653,7 +2653,7 @@ class HeroData {
   }
 
   /// 无畏战车 厄加特
-  static Hero Urgot() {
+  static Hero urgot() {
     Skin skin01 = Skin(
       skinName: '无畏战车 厄加特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big6000.jpg',
@@ -2742,7 +2742,7 @@ class HeroData {
   }
 
   /// 德邦总管 赵信
-  static Hero ZhaoXin() {
+  static Hero zhaoxin() {
     Skin skin01 = Skin(
       skinName: '德邦总管 赵信',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big5000.jpg',
@@ -2860,7 +2860,7 @@ class HeroData {
   }
 
   /// 卡牌大师 崔斯特
-  static Hero Twist() {
+  static Hero twist() {
     Skin skin00 = Skin(
       skinName: '卡牌大师 崔斯特',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big4000.jpg',
@@ -2998,7 +2998,7 @@ class HeroData {
   }
 
   /// 正义巨像 加里奥
-  static Hero Galio() {
+  static Hero galio() {
     Skin skin00 = Skin(
       skinName: '正义巨像 加里奥',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big3000.jpg',
@@ -3106,7 +3106,7 @@ class HeroData {
   }
 
   /// 狂战士 奥拉夫
-  static Hero Olaf() {
+  static Hero olaf() {
     Skin skin00 = Skin(
       skinName: '狂战士 奥拉夫',
       skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big2000.jpg',
@@ -3228,7 +3228,7 @@ class HeroData {
   }
 
   /// 黑暗之女 安妮
-  static Hero Annie() {
+  static Hero annie() {
     Skin skin00 = Skin(
         skinName: '黑暗之女 安妮',
         skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big1000.jpg',

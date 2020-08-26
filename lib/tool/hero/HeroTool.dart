@@ -7,32 +7,32 @@ class HeroTool {
   /// 获取所有英雄列表
   static List<Hero> getHeroList() {
     return [
-      HeroData.Annie(), // 001
-      HeroData.Olaf(), //002
-      HeroData.Galio(), // 003
-      HeroData.Twist(), // 004
-      HeroData.ZhaoXin(), // 005
-      HeroData.Urgot(), // 006
-      HeroData.Leblanc(), // 007
-      HeroData.Vladimir(), // 008
-      HeroData.Fiddlesticks(), // 009
-      HeroData.Kayle(), // 010
-      HeroData.Masteryi(), // 011
-      HeroData.Alistar(), // 012
-      HeroData.Ryze(), // 013
-      HeroData.Sion(), // 014
-      HeroData.Sivir(), // 015
-      HeroData.Soraka(), // 016
-      HeroData.Teemo(), // 017
-      HeroData.Tristana(), // 018
-      HeroData.Warwick(), // 019
-      HeroData.Nunu(), // 020
-      HeroData.MissFortune(), // 021
-      HeroData.Ashe(), // 022
-      HeroData.Tryndamere(), // 023
-      HeroData.JaxCounterStrike(), // 024
-      HeroData.Morgana(), // 025
-      HeroData.Zilean(), // 026
+      HeroData.annie(), // 001
+      HeroData.olaf(), //002
+      HeroData.galio(), // 003
+      HeroData.twist(), // 004
+      HeroData.zhaoxin(), // 005
+      HeroData.urgot(), // 006
+      HeroData.leblanc(), // 007
+      HeroData.vladimir(), // 008
+      HeroData.fiddlesticks(), // 009
+      HeroData.kayle(), // 010
+      HeroData.masteryi(), // 011
+      HeroData.alistar(), // 012
+      HeroData.ryze(), // 013
+      HeroData.sion(), // 014
+      HeroData.sivir(), // 015
+      HeroData.soraka(), // 016
+      HeroData.teemo(), // 017
+      HeroData.tristana(), // 018
+      HeroData.warwick(), // 019
+      HeroData.nunu(), // 020
+      HeroData.missfortune(), // 021
+      HeroData.ashe(), // 022
+      HeroData.tryndamere(), // 023
+      HeroData.jaxcounterstrike(), // 024
+      HeroData.morgana(), // 025
+      HeroData.zilean(), // 026
     ];
   }
 

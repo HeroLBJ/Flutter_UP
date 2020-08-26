@@ -26,7 +26,7 @@ class Third004Page extends StatelessWidget {
             }),
             Selector<Third004Provider, int>(builder: (context, num, child) {
               return Text(
-                '${num}',
+                '$num',
                 style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold),

@@ -3,7 +3,6 @@ import 'package:flutter_up/tool/WidgetTool.dart';
 import 'package:flutter_up/tool/provider/ThemeProvider.dart';
 import 'package:flutter_up/ui/first/first001/first_001_page.dart';
 import 'package:flutter_up/ui/first/first003/first_003_page.dart';
-import 'package:flutter_up/ui/first/first003/first_003_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'first002/first_002_page.dart';
