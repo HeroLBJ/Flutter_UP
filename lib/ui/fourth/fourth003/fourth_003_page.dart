@@ -19,7 +19,7 @@ class Fourth003Page extends StatelessWidget {
             children: <Widget>[
               _wrapChild('SafeArea', () => _startPage(context, SafeAreaPage())),
               _wrapChild('Expanded', () => _startPage(context, ExpandedPage())),
-              _wrapChild('Wrap', () => ToastTool.showText('敬请期待')),
+              _wrapChild('Wrap', () => ToastTool.showText('当前页面就是流式布局')),
               _wrapChild('AnimatedContainer', () => ToastTool.showText('敬请期待')),
               _wrapChild('Opacity', () => ToastTool.showText('敬请期待')),
               _wrapChild('FutureBuilder', () => ToastTool.showText('敬请期待')),

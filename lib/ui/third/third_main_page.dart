@@ -6,6 +6,9 @@ import 'package:flutter_up/ui/third/third003/third_003_page.dart';
 import 'package:flutter_up/ui/third/third004/third_004_page.dart';
 import 'package:flutter_up/ui/third/third005/third_005_page3.dart';
 import 'package:flutter_up/ui/third/third006/third_006_1_page.dart';
+import 'package:flutter_up/ui/third/third007/third_007_page.dart';
+import 'package:flutter_up/ui/third/third008/third_008_page.dart';
+import 'package:flutter_up/ui/third/third009/third_009_page.dart';
 
 class ThirdMainPage extends StatelessWidget {
   @override
@@ -44,6 +47,18 @@ class ThirdMainPage extends StatelessWidget {
           contentChild('Hero动画', () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => Third0061Page()));
+          }),
+          contentChild('富文本', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Third007Page()));
+          }),
+          contentChild('截屏', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Third008Page()));
+          }),
+          contentChild('文件操作', () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Third009Page()));
           }),
         ],
       ),

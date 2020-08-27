@@ -28,6 +28,9 @@ dependencies:
   after_layout: ^1.0.7+2 # 延迟加载
   cached_network_image: ^2.2.0+1 # 网络图片缓存
   bot_toast: ^3.0.1 # 全局弹框
+  path_provider: ^1.6.14 # 获取文件路径
+  permission_handler: ^5.0.1+1 # 权限插件
+  image_gallery_saver: ^1.5.0 # 保存图片到相册
 
 
   # The following adds the Cupertino Icons font to your application.

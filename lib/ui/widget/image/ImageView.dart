@@ -15,8 +15,8 @@ class ImageView extends StatelessWidget {
 
   ImageView(
       {this.imageUrl = '',
-      this.width,
-      this.height,
+      this.width = 0,
+      this.height = 0,
       this.fit = BoxFit.cover,
       this.circular = 0,
       this.topLeft = 0,
@@ -38,9 +38,20 @@ class ImageView extends StatelessWidget {
     );
 
     // 图片
+    var imgWidth = width;
+    if (imgWidth <= 0) {
+      imgWidth = double.infinity;
+    }
+    var imgHeight = height;
+    if (imgHeight <= 0) {
+      imgHeight = double.infinity;
+    }
     var image = CachedNetworkImage(
-      width: width,height: height,
-        imageUrl: imageUrl, errorWidget: (context, url, error) => errorWidget);
+        width: imgWidth,
+        height: imgHeight,
+        imageUrl: imageUrl,
+        fit: fit,
+        errorWidget: (context, url, error) => errorWidget);
 
     return Material(
       clipBehavior: Clip.antiAlias,

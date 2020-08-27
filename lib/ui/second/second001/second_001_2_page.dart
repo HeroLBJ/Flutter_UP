@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_up/tool/AppBarTool.dart';
 
 class Second0012Page extends StatelessWidget {
-  final Color heroColor;
+  final String skinImg;
 
-  Second0012Page({@required this.heroColor});
+  Second0012Page({@required this.skinImg});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Second0012Page extends StatelessWidget {
           child: Hero(
             tag: 'hero_color',
             child: CircleAvatar(
-              backgroundColor: heroColor,
+              backgroundImage: NetworkImage(skinImg),
             ),
           ),
         ),

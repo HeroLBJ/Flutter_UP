@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_up/tool/ColorTool.dart';
+import 'package:flutter_up/tool/hero/HeroTool.dart';
 import 'package:flutter_up/ui/second/second001/second_001_2_page.dart';
+import 'package:flutter_up/ui/widget/image/ImageView.dart';
 
 class Second001Page extends StatefulWidget {
   @override
@@ -65,34 +66,27 @@ class _Second001PageState extends State<Second001Page> {
 class TravelWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var randomHero = HeroTool.randomHero();
     return PageView.builder(
         controller: PageController(viewportFraction: 0.9),
-        itemCount: ColorTool.colorList.length,
+        itemCount: randomHero.skinList.length,
         itemBuilder: (context, index) {
-          Color heroColor = ColorTool.colorList[index];
+          var skin = randomHero.skinList[index];
           return Stack(
             children: <Widget>[
               InkWell(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => Second0012Page(
-                          heroColor: ColorTool.colorList[index])));
+                      builder: (context) =>
+                          Second0012Page(skinImg: skin.skinImg)));
                 },
                 child: Hero(
-                  tag: heroColor,
+                  tag: skin.skinImg,
                   child: Container(
-                    margin: EdgeInsets.only(bottom: 30, left: 5, right: 5),
-                    decoration: BoxDecoration(
-                        color: heroColor,
-                        borderRadius: BorderRadius.circular(5)),
-                    child: Center(
-                      child: Text('${index + 1}',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 32,
-                              fontWeight: FontWeight.bold)),
-                    ),
-                  ),
+                      margin: EdgeInsets.only(bottom: 30, left: 5, right: 5),
+                      child: ImageView(
+                        imageUrl: skin.skinImg,circular: 5,
+                      )),
                 ),
               ),
               Positioned(
@@ -118,7 +112,7 @@ class TravelWidget extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) =>
-                            Second0012Page(heroColor: heroColor)));
+                            Second0012Page(skinImg: skin.skinImg)));
                   },
                   child: Container(
                     width: 60,
@@ -141,24 +135,18 @@ class TravelWidget extends StatelessWidget {
 class TravelSmallWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var randomHero = HeroTool.randomHero();
     return ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: ColorTool.colorList.length,
+        itemCount: randomHero.skinList.length,
         itemBuilder: (context, index) {
+          var skin = randomHero.skinList[index];
           return Container(
             width: 120,
             margin: EdgeInsets.only(
                 bottom: 20, left: index == 0 ? 15 : 0, right: 15),
-            decoration: BoxDecoration(
-                color: ColorTool.colorList[index],
-                borderRadius: BorderRadius.circular(5)),
-            child: Center(
-              child: Text('${index + 1}',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold)),
-            ),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+            child: ImageView(imageUrl: skin.skinImg, circular: 5),
           );
         });
   }
