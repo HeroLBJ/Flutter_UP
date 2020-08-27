@@ -33,6 +33,7 @@ class HeroTool {
       HeroData.jaxcounterstrike(), // 024
       HeroData.morgana(), // 025
       HeroData.zilean(), // 026
+      HeroData.singed(), // 027
     ];
   }
 

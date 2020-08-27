@@ -1,6 +1,131 @@
 import 'Hero.dart';
 
 class HeroData {
+  /// 炼金术士 辛吉德
+  static Hero singed() {
+    Skin skin01 = Skin(
+      skinName: '炼金术士 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27000.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27000.jpg',
+    );
+    Skin skin02 = Skin(
+      skinName: '防暴士兵 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27001.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27001.jpg',
+    );
+    Skin skin03 = Skin(
+      skinName: '机械污染 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27002.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27002.jpg',
+    );
+    Skin skin04 = Skin(
+      skinName: '冲浪高手 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27003.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27003.jpg',
+    );
+    Skin skin05 = Skin(
+      skinName: '科学狂人 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27004.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27004.jpg',
+    );
+    Skin skin06 = Skin(
+      skinName: '炼金狂士 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27005.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27005.jpg',
+    );
+    Skin skin07 = Skin(
+      skinName: '冰雪节 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27006.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27006.jpg',
+    );
+    Skin skin08 = Skin(
+      skinName: 'SSW 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27007.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27007.jpg',
+    );
+    Skin skin09 = Skin(
+      skinName: '黑色天灾 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27008.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27008.jpg',
+    );
+    Skin skin10 = Skin(
+      skinName: '养蜂人 辛吉德',
+      skinImg: 'https://game.gtimg.cn/images/lol/act/img/skin/big27009.jpg',
+      skinSmallImg:
+          'https://game.gtimg.cn/images/lol/act/img/skin/small27009.jpg',
+    );
+
+    var P = SkillInfo(
+        skillName: '剧毒冲流',
+        skillDetail: '辛吉德借助附近英雄进行漂移，在经过他们时获得爆发性的移动速度加成。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/passive/Singed_Passive.png');
+    var Q = SkillInfo(
+        skillName: '剧毒踪迹',
+        skillDetail: '辛吉德在身后留下剧毒踪迹，对经过上面的敌人造成持续伤害。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/PoisonTrail.png');
+    var W = SkillInfo(
+        skillName: '强力粘胶',
+        skillDetail: '扔出一瓶强力粘合剂在地上，其中的敌人会被减速和缚地。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/MegaAdhesive.png');
+    var E = SkillInfo(
+        skillName: '过肩摔',
+        skillDetail: '伤害目标敌方单位，并将他们投掷到辛吉德身后。如果辛吉德将目标扔到强力粘胶上，目标还会被禁锢。',
+        skillImg: 'https://game.gtimg.cn/images/lol/act/img/spell/Fling.png');
+    var R = SkillInfo(
+        skillName: '疯狂药剂',
+        skillDetail: '辛吉德喝下精心炮制的化学药剂，大幅提高战斗属性。',
+        skillImg:
+            'https://game.gtimg.cn/images/lol/act/img/spell/InsanityPotion.png');
+
+    var hero = Hero(
+        id: 20200827,
+        firstName: '炼金术士',
+        secondName: '辛吉德',
+        avatar: 'https://game.gtimg.cn/images/lol/act/img/skin/small27000.jpg',
+        bigAvatar: 'https://game.gtimg.cn/images/lol/act/img/skin/big27000.jpg',
+        skinList: [
+          skin01,
+          skin02,
+          skin03,
+          skin04,
+          skin05,
+          skin06,
+          skin07,
+          skin08,
+          skin09,
+          skin10
+        ],
+        labelList: ['坦克', '战士'],
+        strength: Strength(
+            physicsAttr: 4, magicAttr: 7, defenseAttr: 8, operateAttr: 5),
+        skill: Skill(skillP: P, skillQ: Q, skillW: W, skillE: E, skillR: R),
+        backStory:
+            '辛吉德是一位智力超群的祖安炼金术士，用自己的生命推动知识的边界。没有什么代价是他不能付出的，包括自己的理智。他的疯狂是否有迹可循？他的合剂几乎无不生效，只不过多数人都认为辛吉德已经丧失了全部人性的感知，所到之处只会留下苦难与恐惧的剧毒踪迹。',
+        useList: [
+          '剧毒踪迹在打钱与骚扰方面是很有效的，可以让辛吉德主宰他所在那条线的形势。',
+          '用疯狂药剂诱使敌人在剧毒踪迹上追捕你。',
+          '将敌人扔进你的塔内可以对他们造成巨大伤害。'
+        ],
+        enemyUseList: [
+          '保持一定距离，避免被过肩摔投掷到敌人堆里去。',
+          '辛吉德要接近你的队伍，才能施展技能，充分利用这一点，在攻击他的友军时，使用控制技能限制他的移动。',
+          '追击辛吉德的时候要小心，他很难被打倒，且在你追赶过程中，他能用剧毒踪迹对你造成伤害。'
+        ]);
+    return hero;
+  }
+
   /// 时光守护者 基兰
   static Hero zilean() {
     Skin skin01 = Skin(
