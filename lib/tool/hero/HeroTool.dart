@@ -34,6 +34,8 @@ class HeroTool {
       HeroData.morgana(), // 025
       HeroData.zilean(), // 026
       HeroData.singed(), // 027
+      HeroData.evelynn(), // 028
+      HeroData.twitch(), // 029
     ];
   }
 
